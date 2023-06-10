@@ -3,7 +3,7 @@ module Counter(
 	input Load,
 	input Clk
 );
-	reg [3:0] count;
+	integer count;
 
 	always @ (posedge Clk)
 		begin
@@ -17,7 +17,7 @@ module Counter(
 					count <= count+1;
 				end
 			
-			if(count == 6)
+			if(count == 30)
 				begin
 					 K <= 1;
 				end

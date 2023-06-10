@@ -10,77 +10,79 @@
 # Copying D:/Apps/Quartus/Versao18.1/intelFPGA_lite/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter {D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter/Counter.v}
+# vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter {D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:19:01 on Jun 02,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter" D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter/Counter.v 
+# Start time: 16:04:18 on Jun 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter" D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter.v 
 # -- Compiling module Counter
 # 
 # Top level modules:
 # 	Counter
-# End time: 14:19:01 on Jun 02,2023, Elapsed time: 0:00:00
+# End time: 16:04:19 on Jun 10,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL {D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL/CONTROL.v}
+# vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/CONTROL {D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/CONTROL/CONTROL.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:19:01 on Jun 02,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL" D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL/CONTROL.v 
+# Start time: 16:04:19 on Jun 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/CONTROL" D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/CONTROL/CONTROL.v 
 # -- Compiling module CONTROL
 # 
 # Top level modules:
 # 	CONTROL
-# End time: 14:19:01 on Jun 02,2023, Elapsed time: 0:00:00
+# End time: 16:04:19 on Jun 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder {D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder/Adder.v}
+# vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder {D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:19:01 on Jun 02,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder" D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder/Adder.v 
+# Start time: 16:04:19 on Jun 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder" D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v 
 # -- Compiling module Adder
 # 
 # Top level modules:
 # 	Adder
-# End time: 14:19:01 on Jun 02,2023, Elapsed time: 0:00:00
+# End time: 16:04:19 on Jun 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/ACC {D:/UNIFEI/7Periodo/ELTD15/Multiplicador/ACC/ACC.v}
+# vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/ACC {D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/ACC/ACC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:19:01 on Jun 02,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/ACC" D:/UNIFEI/7Periodo/ELTD15/Multiplicador/ACC/ACC.v 
+# Start time: 16:04:19 on Jun 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/ACC" D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/ACC/ACC.v 
 # -- Compiling module ACC
 # 
 # Top level modules:
 # 	ACC
-# End time: 14:19:01 on Jun 02,2023, Elapsed time: 0:00:00
+# End time: 16:04:19 on Jun 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador {D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador.v}
+# vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador {D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:19:01 on Jun 02,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador" D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador.v 
+# Start time: 16:04:19 on Jun 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador" D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v 
 # -- Compiling module Multiplicador
 # 
 # Top level modules:
 # 	Multiplicador
-# End time: 14:19:01 on Jun 02,2023, Elapsed time: 0:00:00
+# End time: 16:04:19 on Jun 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador {D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador_TB.v}
+# vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador {D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador_TB.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:19:01 on Jun 02,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador" D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador_TB.v 
+# Start time: 16:04:19 on Jun 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador" D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador_TB.v 
 # -- Compiling module Multiplicador_TB
 # 
 # Top level modules:
 # 	Multiplicador_TB
-# End time: 14:19:01 on Jun 02,2023, Elapsed time: 0:00:00
+# End time: 16:04:19 on Jun 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  Multiplicador_TB
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" Multiplicador_TB 
-# Start time: 14:19:01 on Jun 02,2023
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  Multiplicador_TB
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=""+acc"" Multiplicador_TB 
+# Start time: 16:04:19 on Jun 10,2023
 # Loading work.Multiplicador_TB
 # Loading work.Multiplicador
 # Loading work.ACC
 # Loading work.CONTROL
 # Loading work.Counter
 # Loading work.Adder
+# ** Warning: (vsim-3015) D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v(46): [PCDPC] - Port size (33) does not match connection size (17) for port 'Soma'. The port definition is at: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /Multiplicador_TB/DUT/add File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v
 # 
 # add wave *
 # view structure
@@ -88,15 +90,17 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: init_signal_spy [D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador_TB.v(78)] : Mirroring the value of '/Multiplicador_TB/DUT/ws' onto '/Multiplicador_TB/ws'.
-# ** Note: init_signal_spy [D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador_TB.v(79)] : Mirroring the value of '/Multiplicador_TB/DUT/wl' onto '/Multiplicador_TB/wl'.
-# ** Note: init_signal_spy [D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador_TB.v(80)] : Mirroring the value of '/Multiplicador_TB/DUT/wsh' onto '/Multiplicador_TB/wsh'.
-# ** Note: init_signal_spy [D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador_TB.v(81)] : Mirroring the value of '/Multiplicador_TB/DUT/wad' onto '/Multiplicador_TB/wad'.
-# ** Note: init_signal_spy [D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador_TB.v(82)] : Mirroring the value of '/Multiplicador_TB/DUT/wk' onto '/Multiplicador_TB/wk'.
+# ** Note: init_signal_spy [D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador_TB.v(76)] : Mirroring the value of '/Multiplicador_TB/DUT/ws' onto '/Multiplicador_TB/ws'.
+# ** Note: init_signal_spy [D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador_TB.v(77)] : Mirroring the value of '/Multiplicador_TB/DUT/wl' onto '/Multiplicador_TB/wl'.
+# ** Note: init_signal_spy [D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador_TB.v(78)] : Mirroring the value of '/Multiplicador_TB/DUT/wsh' onto '/Multiplicador_TB/wsh'.
+# ** Note: init_signal_spy [D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador_TB.v(79)] : Mirroring the value of '/Multiplicador_TB/DUT/wad' onto '/Multiplicador_TB/wad'.
+# ** Note: init_signal_spy [D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador_TB.v(80)] : Mirroring the value of '/Multiplicador_TB/DUT/wk' onto '/Multiplicador_TB/wk'.
 # Deu bom, soh sucesso
-# ** Note: $finish    : D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador_TB.v(71)
-#    Time: 51420 ns  Iteration: 0  Instance: /Multiplicador_TB
+# ** Note: $finish    : D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador_TB.v(69)
+#    Time: 44565180 ns  Iteration: 0  Instance: /Multiplicador_TB
 # 1
-# Break in Module Multiplicador_TB at D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador_TB.v line 71
-# End time: 14:19:11 on Jun 02,2023, Elapsed time: 0:00:10
-# Errors: 0, Warnings: 0
+# Break in Module Multiplicador_TB at D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador_TB.v line 69
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# End time: 16:06:15 on Jun 10,2023, Elapsed time: 0:01:56
+# Errors: 1, Warnings: 2

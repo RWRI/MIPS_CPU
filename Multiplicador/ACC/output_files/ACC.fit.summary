@@ -1,20 +1,20 @@
-Fitter Status : Successful - Sat Jun 10 14:31:17 2023
+Fitter Status : Successful - Sat Jun 10 15:38:41 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ACC
 Top-level Entity Name : ACC
 Family : Cyclone IV GX
-Device : EP4CGX15BF14A7
+Device : EP4CGX150DF31I7AD
 Timing Models : Final
-Total logic elements : 11 / 14,400 ( < 1 % )
-    Total combinational functions : 11 / 14,400 ( < 1 % )
-    Dedicated logic registers : 9 / 14,400 ( < 1 % )
-Total registers : 9
-Total pins : 22 / 81 ( 27 % )
+Total logic elements : 35 / 149,760 ( < 1 % )
+    Total combinational functions : 35 / 149,760 ( < 1 % )
+    Dedicated logic registers : 33 / 149,760 ( < 1 % )
+Total registers : 33
+Total pins : 70 / 508 ( 14 % )
 Total virtual pins : 0
-Total memory bits : 0 / 552,960 ( 0 % )
-Embedded Multiplier 9-bit elements : 0
-Total GXB Receiver Channel PCS : 0 / 2 ( 0 % )
-Total GXB Receiver Channel PMA : 0 / 2 ( 0 % )
-Total GXB Transmitter Channel PCS : 0 / 2 ( 0 % )
-Total GXB Transmitter Channel PMA : 0 / 2 ( 0 % )
-Total PLLs : 0 / 3 ( 0 % )
+Total memory bits : 0 / 6,635,520 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 720 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 8 ( 0 % )

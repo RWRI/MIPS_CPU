@@ -1,19 +1,19 @@
 module Multiplicador(
-	output [7:0] Produto,
+	output [31:0] Produto,
 	output Idle,
 	output Done,
 	input St,
 	input Clk,
-	input [3:0] Multiplicando,
-	input	[3:0] Multiplicador,
+	input [15:0] Multiplicando,
+	input	[15:0] Multiplicador,
 	input Reset
 );
 
-	wire [4:0] ws;
-	wire [8:0] wp;
+	wire [16:0] ws;
+	wire [32:0] wp;
 	wire wl, wsh, wad, wk;
 	
-	assign Produto = wp[7:0];
+	assign Produto = wp[31:0];
 
 	ACC acc(
 		.Saidas(wp),
@@ -46,7 +46,7 @@ module Multiplicador(
 	Adder add(
 		.Soma(ws),
 		.OperandoA(Multiplicando),
-		.OperandoB(wp[7:4])
+		.OperandoB(wp[31:16])
 	);
 	
 endmodule

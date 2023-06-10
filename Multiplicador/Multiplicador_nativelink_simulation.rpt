@@ -4,7 +4,7 @@ Info: NativeLink has detected Verilog design -- Verilog simulation models will b
 ========= EDA Simulation Settings =====================
 
 Sim Mode              :  RTL
-Family                :  max10
+Family                :  cycloneivgx
 Quartus root          :  d:/apps/quartus/versao18.1/intelfpga_lite/quartus/bin64/
 Quartus sim root      :  d:/apps/quartus/versao18.1/intelfpga_lite/quartus/eda/sim_lib
 Simulation Tool       :  modelsim-altera

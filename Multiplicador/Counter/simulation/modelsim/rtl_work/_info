@@ -1,61 +1,56 @@
 m255
 K4
 z2
-!s11f vlog 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter/simulation/modelsim
+Z0 dD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/simulation/modelsim
 vCounter
-!s110 1681939922
+Z1 !s110 1686421149
 !i10b 1
-!s100 j<E1ifIF79^7MKM4V;YT`2
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Ie4KYOc0h285QG:4nJB3[13
+!s100 dHj<lfOOd<DJIaAd4V:aQ0
+I^NEnD9Qaimbl;k2miAc6J1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1681939881
-8D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter/Counter.v
-FD:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter/Counter.v
-!i122 0
-L0 1 31
-Z3 OV;L;2020.1;71
+w1686420783
+8D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter.v
+FD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter.v
+L0 1
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1681939922.000000
-!s107 D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter/Counter.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter|D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter/Counter.v|
+Z4 !s108 1686421149.000000
+!s107 D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter|D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter.v|
 !i113 1
-Z4 o-vlog01compat -work work
-Z5 !s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter
-Z6 tCvgOpt 0
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter
+Z7 tCvgOpt 0
 n@counter
 vCounter_TB
-!s110 1681939923
-!i10b 1
-!s100 CEz0l?TY4^JRR?BNDmPk=1
 R1
-I@Ul:6F:]@ZYT^_dK:>j5D1
+!i10b 1
+!s100 YU0jHK;A4eJ?8;AHmj;2f0
+ICK>UzD?RST5j2^G^cO]7D3
 R2
 R0
-w1681937076
-8D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter/Counter_TB.v
-FD:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter/Counter_TB.v
-!i122 1
-L0 3 32
+w1686421032
+8D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter_TB.v
+FD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter_TB.v
+L0 3
 R3
 r1
 !s85 0
 31
-!s108 1681939923.000000
-!s107 D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter/Counter_TB.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter|D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter/Counter_TB.v|
-!i113 1
 R4
+!s107 D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter|D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter_TB.v|
+!i113 1
 R5
 R6
+R7
 n@counter_@t@b

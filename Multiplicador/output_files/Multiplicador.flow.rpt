@@ -1,5 +1,5 @@
 Flow report for Multiplicador
-Fri Jun 02 14:18:49 2023
+Sat Jun 10 16:04:10 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,24 +40,26 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Jun 02 14:18:49 2023       ;
+; Flow Status                        ; Successful - Sat Jun 10 16:04:10 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Multiplicador                               ;
 ; Top-level Entity Name              ; Multiplicador                               ;
-; Family                             ; MAX 10                                      ;
-; Device                             ; 10M50DAF484C7G                              ;
+; Family                             ; Cyclone IV GX                               ;
+; Device                             ; EP4CGX150DF31I7AD                           ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 30 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 29 / 49,760 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 18 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 18                                          ;
-; Total pins                         ; 21 / 360 ( 6 % )                            ;
+; Total logic elements               ; 103 / 149,760 ( < 1 % )                     ;
+;     Total combinational functions  ; 101 / 149,760 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 70 / 149,760 ( < 1 % )                      ;
+; Total registers                    ; 70                                          ;
+; Total pins                         ; 69 / 508 ( 14 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
-; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
-; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
-; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
+; Total memory bits                  ; 0 / 6,635,520 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 720 ( 0 % )                             ;
+; Total GXB Receiver Channel PCS     ; 0 / 8 ( 0 % )                               ;
+; Total GXB Receiver Channel PMA     ; 0 / 8 ( 0 % )                               ;
+; Total GXB Transmitter Channel PCS  ; 0 / 8 ( 0 % )                               ;
+; Total GXB Transmitter Channel PMA  ; 0 / 8 ( 0 % )                               ;
+; Total PLLs                         ; 0 / 8 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -66,7 +68,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/02/2023 14:17:50 ;
+; Start date & time ; 06/10/2023 16:03:25 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Multiplicador       ;
 +-------------------+---------------------+
@@ -77,7 +79,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id       ;
 +--------------------------------------+----------------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID                ; 9447189687353.168572626905304          ; --            ; --          ; --               ;
+; COMPILER_SIGNATURE_ID                ; 182946833557590.168642380419164        ; --            ; --          ; --               ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; Multiplicador_TB ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Multiplicador_TB                       ; --            ; --          ; eda_simulation   ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation   ;
@@ -87,8 +89,8 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_MODULE_NAME           ; Multiplicador_TB                       ; --            ; --          ; Multiplicador_TB ;
 ; EDA_TEST_BENCH_NAME                  ; Multiplicador_TB                       ; --            ; --          ; eda_simulation   ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation   ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --               ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --               ;
+; MAX_CORE_JUNCTION_TEMP               ; 100                                    ; --            ; --          ; --               ;
+; MIN_CORE_JUNCTION_TEMP               ; -40                                    ; --            ; --          ; --               ;
 ; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; --          ; Top              ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; --          ; Top              ;
 ; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; --          ; Top              ;
@@ -103,12 +105,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4767 MB             ; 00:00:12                           ;
-; Fitter               ; 00:00:21     ; 1.0                     ; 5637 MB             ; 00:00:11                           ;
-; Assembler            ; 00:00:04     ; 1.0                     ; 4681 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 4815 MB             ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4638 MB             ; 00:00:00                           ;
-; Total                ; 00:00:46     ; --                      ; --                  ; 00:00:30                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4838 MB             ; 00:00:14                           ;
+; Fitter               ; 00:00:22     ; 1.0                     ; 5826 MB             ; 00:00:20                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4757 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4867 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4714 MB             ; 00:00:01                           ;
+; Total                ; 00:00:42     ; --                      ; --                  ; 00:00:41                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

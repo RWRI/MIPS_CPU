@@ -1,5 +1,5 @@
 Flow report for ACC
-Sat Jun 10 14:31:29 2023
+Sat Jun 10 15:38:52 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,26 +40,26 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Jun 10 14:31:29 2023       ;
+; Flow Status                        ; Successful - Sat Jun 10 15:38:52 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; ACC                                         ;
 ; Top-level Entity Name              ; ACC                                         ;
 ; Family                             ; Cyclone IV GX                               ;
-; Device                             ; EP4CGX15BF14A7                              ;
+; Device                             ; EP4CGX150DF31I7AD                           ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 11 / 14,400 ( < 1 % )                       ;
-;     Total combinational functions  ; 11 / 14,400 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 9 / 14,400 ( < 1 % )                        ;
-; Total registers                    ; 9                                           ;
-; Total pins                         ; 22 / 81 ( 27 % )                            ;
+; Total logic elements               ; 35 / 149,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 35 / 149,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 33 / 149,760 ( < 1 % )                      ;
+; Total registers                    ; 33                                          ;
+; Total pins                         ; 70 / 508 ( 14 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 552,960 ( 0 % )                         ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total GXB Receiver Channel PCS     ; 0 / 2 ( 0 % )                               ;
-; Total GXB Receiver Channel PMA     ; 0 / 2 ( 0 % )                               ;
-; Total GXB Transmitter Channel PCS  ; 0 / 2 ( 0 % )                               ;
-; Total GXB Transmitter Channel PMA  ; 0 / 2 ( 0 % )                               ;
-; Total PLLs                         ; 0 / 3 ( 0 % )                               ;
+; Total memory bits                  ; 0 / 6,635,520 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 720 ( 0 % )                             ;
+; Total GXB Receiver Channel PCS     ; 0 / 8 ( 0 % )                               ;
+; Total GXB Receiver Channel PMA     ; 0 / 8 ( 0 % )                               ;
+; Total GXB Transmitter Channel PCS  ; 0 / 8 ( 0 % )                               ;
+; Total GXB Transmitter Channel PMA  ; 0 / 8 ( 0 % )                               ;
+; Total PLLs                         ; 0 / 8 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/10/2023 14:30:45 ;
+; Start date & time ; 06/10/2023 15:37:54 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ACC                 ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 182946833557590.168641824513784        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 182946833557590.168642227409040        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; ACC_TB         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; ACC_TB                                 ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -89,7 +89,7 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_MODULE_NAME           ; ACC_TB                                 ; --            ; --          ; ACC_TB         ;
 ; EDA_TEST_BENCH_NAME                  ; ACC_TB                                 ; --            ; --          ; eda_simulation ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP               ; 125                                    ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP               ; 100                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; -40                                    ; --            ; --          ; --             ;
 ; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
@@ -105,12 +105,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4832 MB             ; 00:00:11                           ;
-; Fitter               ; 00:00:15     ; 1.0                     ; 5578 MB             ; 00:00:05                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4743 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4754 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4704 MB             ; 00:00:00                           ;
-; Total                ; 00:00:34     ; --                      ; --                  ; 00:00:19                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4836 MB             ; 00:00:14                           ;
+; Fitter               ; 00:00:20     ; 1.0                     ; 5835 MB             ; 00:00:18                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4755 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4866 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4713 MB             ; 00:00:00                           ;
+; Total                ; 00:00:39     ; --                      ; --                  ; 00:00:38                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

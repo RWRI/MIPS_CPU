@@ -4,8 +4,8 @@ module Counter_TB();
 	wire k;
 	reg load;
 	reg clk;
-	reg [3:0] count;
 	
+	integer count;
 		
 	Counter DUT(
 		.K(k),
@@ -18,15 +18,15 @@ module Counter_TB();
 		clk = 0;
 		#45 load = 1;
 		#50 load = 0;
-		#130 load = 1;
+		#400 load = 1;
 		#50 load = 0;
-		#300 load = 1;
+		#700 load = 1;
 		#50 load = 0;
 		#350 $finish;
 	end
 
 	always begin
-		#20 clk = ~clk;
+		#5 clk = ~clk;
 	end
 	
 	initial $init_signal_spy("/Counter_TB/DUT/count", "count", 1);

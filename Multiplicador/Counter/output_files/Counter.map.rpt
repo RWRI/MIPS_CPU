@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Counter
-Sat Jun 10 14:37:45 2023
+Sat Jun 10 15:40:50 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,15 +42,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jun 10 14:37:45 2023       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jun 10 15:40:50 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Counter                                     ;
 ; Top-level Entity Name              ; Counter                                     ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 6                                           ;
-;     Total combinational functions  ; 6                                           ;
-;     Dedicated logic registers      ; 5                                           ;
-; Total registers                    ; 5                                           ;
+; Total logic elements               ; 43                                          ;
+;     Total combinational functions  ; 43                                          ;
+;     Dedicated logic registers      ; 33                                          ;
+; Total registers                    ; 33                                          ;
 ; Total pins                         ; 3                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                           ; EP4CGX15BF14A7     ;                    ;
+; Device                                                           ; EP4CGX150DF31I7AD  ;                    ;
 ; Top-level entity name                                            ; Counter            ; Counter            ;
 ; Family name                                                      ; Cyclone IV GX      ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
@@ -184,10 +184,10 @@ refer to the applicable agreement for further details.
 ;                          ;                  ;
 ; DSP block 9-bit elements ; 0                ;
 ;                          ;                  ;
-; Maximum fan-out node     ; count[0]         ;
-; Maximum fan-out          ; 5                ;
-; Total fan-out            ; 33               ;
-; Average fan-out          ; 1.94             ;
+; Maximum fan-out node     ; Clk~input        ;
+; Maximum fan-out          ; 33               ;
+; Total fan-out            ; 207              ;
+; Average fan-out          ; 2.52             ;
 +--------------------------+------------------+
 
 
@@ -196,7 +196,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
-; |Counter                   ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 3    ; 0            ; |Counter            ; Counter     ; work         ;
+; |Counter                   ; 43 (43)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 3    ; 0            ; |Counter            ; Counter     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -206,8 +206,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 33    ;
+; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -222,16 +222,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 3                           ;
-; cycloneiii_ff         ; 5                           ;
-;     plain             ; 5                           ;
-; cycloneiii_lcell_comb ; 6                           ;
-;     normal            ; 6                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 3                           ;
+; cycloneiii_ff         ; 33                          ;
+;     SCLR              ; 32                          ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 43                          ;
+;     arith             ; 31                          ;
+;         2 data inputs ; 31                          ;
+;     normal            ; 12                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
+;         4 data inputs ; 10                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.15                        ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 3.05                        ;
 +-----------------------+-----------------------------+
 
 
@@ -250,7 +253,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Jun 10 14:37:32 2023
+    Info: Processing started: Sat Jun 10 15:40:38 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Counter -c Counter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -259,18 +262,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file counter
 Info (12021): Found 1 design units, including 1 entities, in source file counter_tb.v
     Info (12023): Found entity 1: Counter_TB File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter_TB.v Line: 3
 Info (12127): Elaborating entity "Counter" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at Counter.v(17): truncated value with size 32 to match size of target (4) File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter.v Line: 17
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 9 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 46 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 6 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4831 megabytes
-    Info: Processing ended: Sat Jun 10 14:37:45 2023
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:16
+    Info (21061): Implemented 43 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4839 megabytes
+    Info: Processing ended: Sat Jun 10 15:40:50 2023
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:14
 
 

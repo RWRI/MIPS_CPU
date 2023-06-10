@@ -1,9 +1,9 @@
 `timescale 1ns/10ps
 
 module Adder_TB(); 
-		wire [4:0]soma;
-		reg [3:0] operandoA;
-		reg [3:0] operandoB;
+		wire [16:0]soma;
+		reg [15:0] operandoA;
+		reg [15:0] operandoB;
 		integer	i, j;
 		
 	Adder DUT(
@@ -13,17 +13,20 @@ module Adder_TB();
 	);
 
 	initial begin
-		for(i = 0;i < 16;i = i+1) begin
+		for(i = 1;i < 65536;i = i*2) begin
 			operandoA = i;
-			 for(j = 0; j < 16; j = j+1) begin
-				#20 operandoB = j;
+			 for(j = 0; j < 65536; j = j+1) begin	
+				#10 operandoB = j;			
+				#10 if(soma != i+j) begin
+					$display("Erro:%d+%d = %d",i,j,soma);
+				end				
 			 end
 		end
 	end
 
 //	initial begin
-//		operandoA = 15;
-//		operandoB = 15;
+//		operandoA = 65535;
+//		operandoB = 65535;
 //		#20 $finish;
 //	end
 	
