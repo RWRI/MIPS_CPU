@@ -1,0 +1,16 @@
+|Adder
+Soma[0] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+Soma[1] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+Soma[2] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+Soma[3] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+Soma[4] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+OperandoA[0] => Add0.IN4
+OperandoA[1] => Add0.IN3
+OperandoA[2] => Add0.IN2
+OperandoA[3] => Add0.IN1
+OperandoB[0] => Add0.IN8
+OperandoB[1] => Add0.IN7
+OperandoB[2] => Add0.IN6
+OperandoB[3] => Add0.IN5
+
+

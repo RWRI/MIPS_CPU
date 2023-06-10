@@ -1,0 +1,53 @@
+# Reading pref.tcl
+# do CONTROL_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/Apps/Quartus/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL {D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL/CONTROL.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:47:55 on Apr 19,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL" D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL/CONTROL.v 
+# -- Compiling module CONTROL
+# 
+# Top level modules:
+# 	CONTROL
+# End time: 17:47:55 on Apr 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL {D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL/CONTROL_TB.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:47:56 on Apr 19,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL" D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL/CONTROL_TB.v 
+# -- Compiling module CONTROL_TB
+# 
+# Top level modules:
+# 	CONTROL_TB
+# End time: 17:47:56 on Apr 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  CONTROL_TB
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" CONTROL_TB 
+# Start time: 17:47:56 on Apr 19,2023
+# Loading work.CONTROL_TB
+# Loading work.CONTROL
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: init_signal_spy [D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL/CONTROL_TB.v(49)] : Mirroring the value of '/CONTROL_TB/DUT/state' onto '/CONTROL_TB/state'.
+# ** Note: $finish    : D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL/CONTROL_TB.v(42)
+#    Time: 415 ns  Iteration: 0  Instance: /CONTROL_TB
+# 1
+# Break in Module CONTROL_TB at D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL/CONTROL_TB.v line 42
+# End time: 17:48:12 on Apr 19,2023, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 0

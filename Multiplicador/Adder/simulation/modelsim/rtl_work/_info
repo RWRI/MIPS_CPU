@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder/simulation/modelsim
+vAdder
+Z1 !s110 1681424601
+!i10b 1
+!s100 4=end79R2WUJYmi0GSi0c2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[k6TSjSc:9ee<0oOI`ULn2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1681424432
+8D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder/Adder.v
+FD:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder/Adder.v
+!i122 0
+L0 1 9
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1681424601.000000
+!s107 D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder/Adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder|D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder/Adder.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder
+Z8 tCvgOpt 0
+n@adder
+vAdder_TB
+R1
+!i10b 1
+!s100 RDaYF2_:;EhicOCeAF4_`3
+R2
+I00fVTJ^jmz6CzgSUO0F?93
+R3
+R0
+w1681424562
+8D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder/Adder_TB.v
+FD:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder/Adder_TB.v
+!i122 1
+L0 3 30
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder/Adder_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder|D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder/Adder_TB.v|
+!i113 1
+R6
+R7
+R8
+n@adder_@t@b

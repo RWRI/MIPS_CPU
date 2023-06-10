@@ -1,0 +1,27 @@
+`timescale 1ns/10ps
+
+module CONTROL_TB(); 
+	
+	
+	CONTROL DUT(
+		
+	);
+	
+	initial begin
+		
+		
+		#200 $finish;
+	end
+	
+	always begin
+		#10 clk = ~clk;
+	end
+
+//	initial begin
+//		for(i = 0;i < 64;i = i+1) begin
+//			 {sel, a, b, c, d} = i;
+//			 #10 sel = 0;
+//		end		
+//	end
+
+endmodule

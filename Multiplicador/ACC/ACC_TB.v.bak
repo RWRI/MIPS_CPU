@@ -1,0 +1,43 @@
+`timescale 1ns/10ps
+
+module ACC_TB(); 
+		wire [8:0] saidas;
+		reg load;
+		reg sh;
+		reg ad;
+		reg clk;
+		reg [8:0] entradas;
+		
+	ACC DUT(
+		.Saidas(saidas),
+		.Load(load),
+		.Sh(sh),
+		.Ad(ad),
+		.CLk(clk),
+		.Entradas(entradas)
+	);
+
+	initial begin
+		load = 1;
+		sh = 0;
+		ad = 0;
+		clk = 0;
+		#20
+		load = 0;
+	end
+
+	always begin
+		#20 clk = ~clk;
+	end
+	
+	always begin
+		#40 ad = ~ad;
+	end
+	
+	always begin
+		#80 sh = ~sh;
+	end
+	
+	
+
+endmodule

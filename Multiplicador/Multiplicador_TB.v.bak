@@ -1,0 +1,27 @@
+`timescale 1ns/10ps
+
+module Multiplicador_TB(); 
+	reg a, b, c, d;
+	reg sel[1:0];
+	wire out;
+	integer i = 0;
+	
+	Multiplicador DUT(
+		Produto,
+		Idle,
+		Done,
+		St,
+		Clk,
+		Multiplicando,
+		Multiplicador,
+		Reset
+	);
+
+//	initial begin
+//		for(i = 0;i < 64;i = i+1) begin
+//			 {sel, a, b, c, d} = i;
+//			 #10 sel = 0;
+//		end		
+//	end
+
+endmodule

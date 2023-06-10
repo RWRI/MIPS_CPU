@@ -1,0 +1,7 @@
+module Counter(
+	output K(,
+	input Load,
+	input Clk
+);
+
+endmodule

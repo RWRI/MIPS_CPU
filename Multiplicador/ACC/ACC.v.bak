@@ -1,0 +1,10 @@
+module ACC(
+		output [8:0] Saidas,
+		input Load,
+		input Sh,
+		input Ad,
+		input Clk,
+		input [8:0]Entradas
+	);
+	
+endmodule;

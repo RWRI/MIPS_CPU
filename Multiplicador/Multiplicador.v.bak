@@ -1,0 +1,50 @@
+module Multiplicador(
+	output [7:0] Produto,
+	output Idle,
+	output Done,
+	input St,
+	input Clk,
+	input [3:0] Multiplicando,
+	input	[3:0] Multiplicador
+);
+
+	wire [4:0] ws;
+	wire [7:0] wp;
+	wire wl, wsh, wad, wm, wk;
+	
+	assign Produto = wp;
+	assign wm = wp[0];
+
+	ACC acc(
+		.Saidas(wp[7:4]),
+		.Load(wl),
+		.Sh(wsh),
+		.Ad(wad),
+		.Clk(Clk),
+		.Entradas({ws[4:0],Multiplicador[3:0]})
+	);
+	
+	CONTROL clt(
+		.Idle(Idle), 
+		.Done(Done), 
+		.Load(wl),
+		.Sh(wsh),
+		.Ad(wad),
+		.Clk(Clk),
+		.K(wk),
+		.M(wm)
+	);
+	
+	Counter count(
+		.K(wk),
+		.Load(wl),
+		.Clk(Clk)
+	);
+	
+	Adder add(
+		.Soma(ws[4:0]),
+		.OperandoA(Multiplicando[3:0]),
+		.OperandoB(wp(7:4])
+	);
+	
+endmodule

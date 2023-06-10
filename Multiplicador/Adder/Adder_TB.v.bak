@@ -1,0 +1,22 @@
+`timescale 1ns/10ps
+
+module Adder_TB(); 
+	
+	Adder DUT(
+		
+	);
+	
+	always begin
+		#10 clk = ~clk;
+	end
+
+	initial begin
+		for(integer i = 0;i < 16;i = i+1) begin
+			 for(integer j = 0; j < 16; j = j+1) begin{
+				
+				
+			 }
+		end		
+	end
+
+endmodule

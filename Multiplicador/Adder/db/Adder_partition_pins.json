@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Soma[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[4]",
+					"strict" : false
+				},
+				{
+					"name" : "OperandoB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OperandoA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "OperandoB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OperandoA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "OperandoB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OperandoA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "OperandoB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "OperandoA[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,148 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/UNIFEI/7Periodo/ELTD15/Multiplicador/simulation/modelsim
+vACC
+Z1 !s110 1685726341
+!i10b 1
+!s100 N5=J=naAb?P3d?N]<YHUC3
+I@^0?aiDVlz?3z657=SG:^2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1681523948
+8D:/UNIFEI/7Periodo/ELTD15/Multiplicador/ACC/ACC.v
+FD:/UNIFEI/7Periodo/ELTD15/Multiplicador/ACC/ACC.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1685726341.000000
+!s107 D:/UNIFEI/7Periodo/ELTD15/Multiplicador/ACC/ACC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/ACC|D:/UNIFEI/7Periodo/ELTD15/Multiplicador/ACC/ACC.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/ACC
+Z6 tCvgOpt 0
+n@a@c@c
+vAdder
+R1
+!i10b 1
+!s100 I?9:8:U9>hJ5=E?fHEHK02
+IW8PmlhFjM0RHFMe9Ca4M>3
+R2
+R0
+w1681424432
+8D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder/Adder.v
+FD:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder/Adder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder/Adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder|D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder/Adder.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Adder
+R6
+n@adder
+vCONTROL
+R1
+!i10b 1
+!s100 J2DX79z=fz2LNzaPfOoV=1
+I5cV?njBKRhkBgLj<4_TA31
+R2
+R0
+w1681937234
+8D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL/CONTROL.v
+FD:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL/CONTROL.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL/CONTROL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL|D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL/CONTROL.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/CONTROL
+R6
+n@c@o@n@t@r@o@l
+vCounter
+R1
+!i10b 1
+!s100 7@ZDLemI6Nizdz45kHR@m2
+IeJB=Io1C>aYo?7ogCSDem2
+R2
+R0
+w1681939881
+8D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter/Counter.v
+FD:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter/Counter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter/Counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter|D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter/Counter.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Counter
+R6
+n@counter
+vMultiplicador
+R1
+!i10b 1
+!s100 >j6FH4K1>Jba]kkHBagkU1
+Id57j@J^cDA;zIDjKI6M190
+R2
+R0
+w1681483462
+8D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador.v
+FD:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador|D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador.v|
+!i113 1
+R5
+Z7 !s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador
+R6
+n@multiplicador
+vMultiplicador_TB
+R1
+!i10b 1
+!s100 B9?lG@7KPRE4a6a2Xm[DG3
+IlEE`V?>1POL6>nbcj>cn^3
+R2
+R0
+w1681949364
+8D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador_TB.v
+FD:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador_TB.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD15/Multiplicador|D:/UNIFEI/7Periodo/ELTD15/Multiplicador/Multiplicador_TB.v|
+!i113 1
+R5
+R7
+R6
+n@multiplicador_@t@b

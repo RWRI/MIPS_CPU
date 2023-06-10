@@ -1,0 +1,12 @@
+CONTROL clt(
+		.Idle(Idle), 
+		.Done(Done), 
+		.Load(wl),
+		.Sh(wsh),
+		.Ad(wad),
+		.Clk(Clk),
+		.K(wk),
+		.M(wp[0])
+);
+
+endmodule

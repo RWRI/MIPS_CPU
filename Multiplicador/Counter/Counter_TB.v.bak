@@ -1,0 +1,25 @@
+`timescale 1ns/10ps
+
+module Counter_TB(); 
+	wire k,
+	reg load,
+	reg clk
+		
+	Counter DUT(
+		.K(k),
+		.Load(load),
+		.Clk(clk)
+	);
+
+	initial begin
+		load = 0;
+		#30 load = 1;
+		#30 load = 0;
+		#300 $finish;
+	end
+
+	always begin
+		#20 clk = ~clk;
+	end
+
+endmodule
