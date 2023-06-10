@@ -48,15 +48,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "Load",
-					"strict" : false
-				},
-				{
 					"name" : "Clk",
 					"strict" : false
 				},
 				{
-					"name" : "Ad",
+					"name" : "Load",
 					"strict" : false
 				},
 				{
@@ -73,6 +69,10 @@
 				},
 				{
 					"name" : "Entradas[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Ad",
 					"strict" : false
 				},
 				{
