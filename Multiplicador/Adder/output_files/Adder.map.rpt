@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Adder
-Sat Jun 10 15:39:33 2023
+Fri Jun 16 16:01:40 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jun 10 15:39:33 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 16 16:01:40 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Adder                                       ;
 ; Top-level Entity Name              ; Adder                                       ;
@@ -51,7 +51,7 @@ refer to the applicable agreement for further details.
 ;     Total combinational functions  ; 17                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 65                                          ;
+; Total pins                         ; 49                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -179,14 +179,14 @@ refer to the applicable agreement for further details.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 65               ;
+; I/O pins                 ; 49               ;
 ;                          ;                  ;
 ; DSP block 9-bit elements ; 0                ;
 ;                          ;                  ;
 ; Maximum fan-out node     ; Add0~0           ;
 ; Maximum fan-out          ; 2                ;
-; Total fan-out            ; 130              ;
-; Average fan-out          ; 0.88             ;
+; Total fan-out            ; 114              ;
+; Average fan-out          ; 0.99             ;
 +--------------------------+------------------+
 
 
@@ -195,7 +195,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
-; |Adder                     ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 65   ; 0            ; |Adder              ; Adder       ; work         ;
+; |Adder                     ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 49   ; 0            ; |Adder              ; Adder       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -220,15 +220,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 65                          ;
-; cycloneiii_lcell_comb ; 18                          ;
+; boundary_port         ; 49                          ;
+; cycloneiii_lcell_comb ; 17                          ;
 ;     arith             ; 16                          ;
 ;         3 data inputs ; 16                          ;
-;     normal            ; 2                           ;
-;         0 data inputs ; 2                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.60                        ;
-; Average LUT depth     ; 1.99                        ;
+; Average LUT depth     ; 2.02                        ;
 +-----------------------+-----------------------------+
 
 
@@ -237,7 +237,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -247,7 +247,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Jun 10 15:39:21 2023
+    Info: Processing started: Fri Jun 16 16:01:21 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Adder -c Adder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -256,33 +256,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file adder.v
 Info (12021): Found 1 design units, including 1 entities, in source file adder_tb.v
     Info (12023): Found entity 1: Adder_TB File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder_TB.v Line: 3
 Info (12127): Elaborating entity "Adder" for the top level hierarchy
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Soma[17]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
-    Warning (13410): Pin "Soma[18]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
-    Warning (13410): Pin "Soma[19]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
-    Warning (13410): Pin "Soma[20]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
-    Warning (13410): Pin "Soma[21]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
-    Warning (13410): Pin "Soma[22]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
-    Warning (13410): Pin "Soma[23]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
-    Warning (13410): Pin "Soma[24]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
-    Warning (13410): Pin "Soma[25]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
-    Warning (13410): Pin "Soma[26]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
-    Warning (13410): Pin "Soma[27]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
-    Warning (13410): Pin "Soma[28]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
-    Warning (13410): Pin "Soma[29]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
-    Warning (13410): Pin "Soma[30]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
-    Warning (13410): Pin "Soma[31]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
-    Warning (13410): Pin "Soma[32]" is stuck at GND File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v Line: 2
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 82 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 32 input pins
-    Info (21059): Implemented 33 output pins
+    Info (21059): Implemented 17 output pins
     Info (21061): Implemented 17 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4808 megabytes
-    Info: Processing ended: Sat Jun 10 15:39:33 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:14
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4806 megabytes
+    Info: Processing ended: Fri Jun 16 16:01:40 2023
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:12
 
 

@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Sat Jun 10 15:39:33 2023
+Analysis & Synthesis Status : Successful - Fri Jun 16 16:01:40 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Adder
 Top-level Entity Name : Adder
@@ -7,7 +7,7 @@ Total logic elements : 17
     Total combinational functions : 17
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 65
+Total pins : 49
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

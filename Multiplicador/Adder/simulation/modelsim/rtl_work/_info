@@ -9,48 +9,48 @@ z2
 cModel Technology
 Z0 dD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/simulation/modelsim
 vAdder
-!s110 1686420488
+Z1 !s110 1686942201
 !i10b 1
-!s100 MI1HT;j:EiV`gDJC2UaNi2
-Ik0jLW]=f[m`lJkbAaBnY;3
-Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s100 @8ek]6j`[ZLN]Y>K0LC3z1
+IVzbb`8f?_33CSfDUgN=6Y2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1686419202
+w1686942001
 8D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v
 FD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v
 L0 1
-Z2 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1686420488.000000
+Z4 !s108 1686942201.000000
 !s107 D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder|D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v|
 !i113 1
-Z3 o-vlog01compat -work work
-Z4 !s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder
-Z5 tCvgOpt 0
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder
+Z7 tCvgOpt 0
 n@adder
 vAdder_TB
-!s110 1686420489
+R1
 !i10b 1
 !s100 @dFY8d]i]F:GT1hF9<16U3
 Id5`J[26abCMDmmAU=?Mo;0
-R1
+R2
 R0
-w1686420480
+w1686424304
 8D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder_TB.v
 FD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder_TB.v
 L0 3
-R2
+R3
 r1
 !s85 0
 31
-!s108 1686420489.000000
+R4
 !s107 D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder_TB.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder|D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder_TB.v|
 !i113 1
-R3
-R4
 R5
+R6
+R7
 n@adder_@t@b

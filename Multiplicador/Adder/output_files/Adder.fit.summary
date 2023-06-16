@@ -1,4 +1,4 @@
-Fitter Status : Successful - Sat Jun 10 15:39:50 2023
+Fitter Status : Successful - Fri Jun 16 16:02:15 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Adder
 Top-level Entity Name : Adder
@@ -9,7 +9,7 @@ Total logic elements : 17 / 149,760 ( < 1 % )
     Total combinational functions : 17 / 149,760 ( < 1 % )
     Dedicated logic registers : 0 / 149,760 ( 0 % )
 Total registers : 0
-Total pins : 65 / 508 ( 13 % )
+Total pins : 49 / 508 ( 10 % )
 Total virtual pins : 0
 Total memory bits : 0 / 6,635,520 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 720 ( 0 % )

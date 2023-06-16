@@ -1,5 +1,5 @@
 Fitter report for Adder
-Sat Jun 10 15:39:50 2023
+Fri Jun 16 16:02:15 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Jun 10 15:39:50 2023       ;
+; Fitter Status                      ; Successful - Fri Jun 16 16:02:15 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Adder                                       ;
 ; Top-level Entity Name              ; Adder                                       ;
@@ -73,7 +73,7 @@ refer to the applicable agreement for further details.
 ;     Total combinational functions  ; 17 / 149,760 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 0 / 149,760 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 65 / 508 ( 13 % )                           ;
+; Total pins                         ; 49 / 508 ( 10 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 6,635,520 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 720 ( 0 % )                             ;
@@ -159,7 +159,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -169,8 +169,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 158 ) ; 0.00 % ( 0 / 158 )         ; 0.00 % ( 0 / 158 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 158 ) ; 0.00 % ( 0 / 158 )         ; 0.00 % ( 0 / 158 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 126 ) ; 0.00 % ( 0 / 126 )         ; 0.00 % ( 0 / 126 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 126 ) ; 0.00 % ( 0 / 126 )         ; 0.00 % ( 0 / 126 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -193,7 +193,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 148 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 116 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -230,8 +230,8 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ;                                             ;                        ;
 ; Total LABs:  partially or completely used   ; 2 / 9,360 ( < 1 % )    ;
 ; Virtual pins                                ; 0                      ;
-; I/O pins                                    ; 65 / 508 ( 13 % )      ;
-;     -- Clock pins                           ; 1 / 10 ( 10 % )        ;
+; I/O pins                                    ; 49 / 508 ( 10 % )      ;
+;     -- Clock pins                           ; 0 / 10 ( 0 % )         ;
 ;     -- Dedicated input pins                 ; 0 / 25 ( 0 % )         ;
 ;                                             ;                        ;
 ; M9Ks                                        ; 0 / 720 ( 0 % )        ;
@@ -251,11 +251,11 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; GXB Transmitter channel PMAs                ; 0 / 8 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 3 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%     ;
-; Peak interconnect usage (total/H/V)         ; 0.8% / 0.2% / 1.6%     ;
+; Peak interconnect usage (total/H/V)         ; 0.7% / 0.2% / 1.5%     ;
 ; Maximum fan-out                             ; 2                      ;
 ; Highest non-global fan-out                  ; 1                      ;
-; Total fan-out                               ; 135                    ;
-; Average fan-out                             ; 0.86                   ;
+; Total fan-out                               ; 119                    ;
+; Average fan-out                             ; 0.95                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -290,7 +290,7 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; Total LABs:  partially or completely used   ; 2 / 9360 ( < 1 % )    ; 0 / 9360 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
-; I/O pins                                    ; 65                    ; 0                              ;
+; I/O pins                                    ; 49                    ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 720 ( 0 % )       ; 0 / 720 ( 0 % )                ;
 ; Total memory bits                           ; 0                     ; 0                              ;
 ; Total RAM block bits                        ; 0                     ; 0                              ;
@@ -302,7 +302,7 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 130                   ; 5                              ;
+;     -- Total Connections                    ; 114                   ; 5                              ;
 ;     -- Registered Connections               ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
@@ -311,7 +311,7 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ;                                             ;                       ;                                ;
 ; Partition Interface                         ;                       ;                                ;
 ;     -- Input Ports                          ; 32                    ; 0                              ;
-;     -- Output Ports                         ; 33                    ; 0                              ;
+;     -- Output Ports                         ; 17                    ; 0                              ;
 ;     -- Bidir Ports                          ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Registered Ports                            ;                       ;                                ;
@@ -335,38 +335,38 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name          ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; OperandoA[0]  ; T29   ; 6        ; 117          ; 46           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoA[10] ; K30   ; 6        ; 117          ; 60           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoA[11] ; N21   ; 6        ; 117          ; 65           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoA[12] ; N25   ; 6        ; 117          ; 57           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoA[13] ; K29   ; 6        ; 117          ; 64           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoA[14] ; K28   ; 6        ; 117          ; 64           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoA[15] ; G30   ; 6        ; 117          ; 61           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoA[1]  ; L28   ; 6        ; 117          ; 66           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoA[2]  ; L27   ; 6        ; 117          ; 66           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoA[3]  ; N24   ; 6        ; 117          ; 59           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoA[4]  ; H28   ; 6        ; 117          ; 76           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoA[5]  ; D30   ; 6        ; 117          ; 74           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoA[6]  ; E30   ; 6        ; 117          ; 69           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoA[7]  ; G28   ; 6        ; 117          ; 70           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoA[8]  ; H30   ; 6        ; 117          ; 61           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoA[9]  ; P21   ; 6        ; 117          ; 65           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[0]  ; T30   ; 6        ; 117          ; 46           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[10] ; M25   ; 6        ; 117          ; 58           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[11] ; F30   ; 6        ; 117          ; 69           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[12] ; K27   ; 6        ; 117          ; 72           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[13] ; L25   ; 6        ; 117          ; 68           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[14] ; L30   ; 6        ; 117          ; 60           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[15] ; J30   ; 6        ; 117          ; 62           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[1]  ; R24   ; 6        ; 117          ; 55           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[2]  ; M21   ; 6        ; 117          ; 67           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[3]  ; J29   ; 6        ; 117          ; 62           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[4]  ; G29   ; 6        ; 117          ; 70           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[5]  ; D29   ; 6        ; 117          ; 74           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[6]  ; M22   ; 6        ; 117          ; 67           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[7]  ; M28   ; 6        ; 117          ; 59           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[8]  ; M27   ; 6        ; 117          ; 60           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; OperandoB[9]  ; K26   ; 6        ; 117          ; 72           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[0]  ; Y30   ; 5        ; 117          ; 31           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[10] ; AH30  ; 5        ; 117          ; 10           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[11] ; AG29  ; 5        ; 117          ; 11           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[12] ; AA25  ; 5        ; 117          ; 7            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[13] ; AC27  ; 5        ; 117          ; 23           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[14] ; AA30  ; 5        ; 117          ; 32           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[15] ; AG30  ; 5        ; 117          ; 17           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[1]  ; V26   ; 5        ; 117          ; 33           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[2]  ; V25   ; 5        ; 117          ; 34           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[3]  ; U21   ; 5        ; 117          ; 33           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[4]  ; AB29  ; 5        ; 117          ; 31           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[5]  ; AA28  ; 5        ; 117          ; 29           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[6]  ; AE27  ; 5        ; 117          ; 18           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[7]  ; W28   ; 5        ; 117          ; 36           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[8]  ; AF30  ; 5        ; 117          ; 17           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoA[9]  ; AE28  ; 5        ; 117          ; 18           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[0]  ; AF28  ; 5        ; 117          ; 15           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[10] ; AA27  ; 5        ; 117          ; 14           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[11] ; W26   ; 5        ; 117          ; 35           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[12] ; AB28  ; 5        ; 117          ; 24           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[13] ; Y27   ; 5        ; 117          ; 13           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[14] ; AD28  ; 5        ; 117          ; 21           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[15] ; T21   ; 5        ; 117          ; 32           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[1]  ; AJ30  ; 5        ; 117          ; 11           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[2]  ; AC28  ; 5        ; 117          ; 23           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[3]  ; AE30  ; 5        ; 117          ; 19           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[4]  ; AC30  ; 5        ; 117          ; 27           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[5]  ; Y22   ; 5        ; 117          ; 22           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[6]  ; AA22  ; 5        ; 117          ; 22           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[7]  ; AE29  ; 5        ; 117          ; 19           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[8]  ; AA26  ; 5        ; 117          ; 14           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; OperandoB[9]  ; AD27  ; 5        ; 117          ; 21           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 +---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -375,61 +375,47 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 +----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; Soma[0]  ; K25   ; 6        ; 117          ; 73           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[10] ; F29   ; 6        ; 117          ; 81           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[11] ; P25   ; 6        ; 117          ; 54           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[12] ; M26   ; 6        ; 117          ; 56           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[13] ; N29   ; 6        ; 117          ; 54           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[14] ; N26   ; 6        ; 117          ; 53           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[15] ; N27   ; 6        ; 117          ; 56           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[16] ; N28   ; 6        ; 117          ; 55           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[17] ; G23   ; 7        ; 108          ; 91           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[18] ; AH11  ; 3        ; 30           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[19] ; D19   ; 7        ; 72           ; 91           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[1]  ; J28   ; 6        ; 117          ; 76           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[20] ; AE18  ; 4        ; 70           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[21] ; G6    ; 8        ; 5            ; 91           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[22] ; P30   ; 6        ; 117          ; 51           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[23] ; AB16  ; 3        ; 39           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[24] ; C9    ; 8        ; 17           ; 91           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[25] ; T23   ; 5        ; 117          ; 43           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[26] ; G13   ; 8        ; 50           ; 91           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[27] ; AF12  ; 3        ; 26           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[28] ; AK22  ; 4        ; 82           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[29] ; AH22  ; 4        ; 88           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[2]  ; H25   ; 6        ; 117          ; 79           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[30] ; D20   ; 7        ; 77           ; 91           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[31] ; AF3   ; 3        ; 12           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[32] ; AB11  ; 3        ; 34           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[3]  ; K24   ; 6        ; 117          ; 78           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[4]  ; C29   ; 6        ; 117          ; 77           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[5]  ; J25   ; 6        ; 117          ; 79           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[6]  ; J26   ; 6        ; 117          ; 73           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[7]  ; C30   ; 6        ; 117          ; 77           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[8]  ; M30   ; 6        ; 117          ; 57           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; Soma[9]  ; M29   ; 6        ; 117          ; 58           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[0]  ; T25   ; 5        ; 117          ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[10] ; V21   ; 5        ; 117          ; 28           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[11] ; AE25  ; 5        ; 117          ; 10           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[12] ; Y28   ; 5        ; 117          ; 28           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[13] ; AB25  ; 5        ; 117          ; 7            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[14] ; AB27  ; 5        ; 117          ; 24           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[15] ; AA29  ; 5        ; 117          ; 29           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[16] ; AE26  ; 5        ; 117          ; 8            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[1]  ; AD29  ; 5        ; 117          ; 26           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[2]  ; AC25  ; 5        ; 117          ; 6            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[3]  ; AB30  ; 5        ; 117          ; 27           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[4]  ; AD30  ; 5        ; 117          ; 26           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[5]  ; AF27  ; 5        ; 117          ; 15           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[6]  ; W25   ; 5        ; 117          ; 36           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[7]  ; Y25   ; 5        ; 117          ; 8            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[8]  ; U25   ; 5        ; 117          ; 35           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; Soma[9]  ; AH29  ; 5        ; 117          ; 13           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Dual Purpose and Dedicated Pins                                                                          ;
-+----------+------------------+--------------------------+---------------------+---------------------------+
-; Location ; Pin Name         ; Reserved As              ; User Signal Name    ; Pin Type                  ;
-+----------+------------------+--------------------------+---------------------+---------------------------+
-; AC8      ; MSEL3            ; -                        ; -                   ; Dedicated Programming Pin ;
-; AC7      ; MSEL2            ; -                        ; -                   ; Dedicated Programming Pin ;
-; AD8      ; MSEL1            ; -                        ; -                   ; Dedicated Programming Pin ;
-; AD7      ; MSEL0            ; -                        ; -                   ; Dedicated Programming Pin ;
-; AB9      ; CONF_DONE        ; -                        ; -                   ; Dedicated Programming Pin ;
-; AJ1      ; nSTATUS          ; -                        ; -                   ; Dedicated Programming Pin ;
-; AE7      ; DIFFIO_B1n, NCEO ; Use as programming pin   ; ~ALTERA_NCEO~       ; Dual Purpose Pin          ;
-; A3       ; DATA0            ; As input tri-stated      ; ~ALTERA_DATA0~      ; Dual Purpose Pin          ;
-; G9       ; DATA1, ASDO      ; As input tri-stated      ; ~ALTERA_ASDO_DATA1~ ; Dual Purpose Pin          ;
-; B4       ; NCSO             ; As input tri-stated      ; ~ALTERA_NCSO~       ; Dual Purpose Pin          ;
-; B3       ; DCLK             ; As output driving ground ; ~ALTERA_DCLK~       ; Dual Purpose Pin          ;
-; B1       ; nCONFIG          ; -                        ; -                   ; Dedicated Programming Pin ;
-; C1       ; nCE              ; -                        ; -                   ; Dedicated Programming Pin ;
-+----------+------------------+--------------------------+---------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------+
+; Dual Purpose and Dedicated Pins                                                                               ;
++----------+-----------------------+--------------------------+---------------------+---------------------------+
+; Location ; Pin Name              ; Reserved As              ; User Signal Name    ; Pin Type                  ;
++----------+-----------------------+--------------------------+---------------------+---------------------------+
+; AC8      ; MSEL3                 ; -                        ; -                   ; Dedicated Programming Pin ;
+; AC7      ; MSEL2                 ; -                        ; -                   ; Dedicated Programming Pin ;
+; AD8      ; MSEL1                 ; -                        ; -                   ; Dedicated Programming Pin ;
+; AD7      ; MSEL0                 ; -                        ; -                   ; Dedicated Programming Pin ;
+; AB9      ; CONF_DONE             ; -                        ; -                   ; Dedicated Programming Pin ;
+; AJ1      ; nSTATUS               ; -                        ; -                   ; Dedicated Programming Pin ;
+; AE7      ; DIFFIO_B1n, NCEO      ; Use as programming pin   ; ~ALTERA_NCEO~       ; Dual Purpose Pin          ;
+; AF28     ; DIFFIO_R55n, DEV_OE   ; Use as regular IO        ; OperandoB[0]        ; Dual Purpose Pin          ;
+; AF27     ; DIFFIO_R55p, DEV_CLRn ; Use as regular IO        ; Soma[5]             ; Dual Purpose Pin          ;
+; A3       ; DATA0                 ; As input tri-stated      ; ~ALTERA_DATA0~      ; Dual Purpose Pin          ;
+; G9       ; DATA1, ASDO           ; As input tri-stated      ; ~ALTERA_ASDO_DATA1~ ; Dual Purpose Pin          ;
+; B4       ; NCSO                  ; As input tri-stated      ; ~ALTERA_NCSO~       ; Dual Purpose Pin          ;
+; B3       ; DCLK                  ; As output driving ground ; ~ALTERA_DCLK~       ; Dual Purpose Pin          ;
+; B1       ; nCONFIG               ; -                        ; -                   ; Dedicated Programming Pin ;
+; C1       ; nCE                   ; -                        ; -                   ; Dedicated Programming Pin ;
++----------+-----------------------+--------------------------+---------------------+---------------------------+
 
 
 +-------------------------------------------------------------------------------+
@@ -439,15 +425,15 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 +----------+------------------+---------------+--------------+------------------+
 ; QL1      ; 0 / 16 ( 0 % )   ; --            ; --           ; --               ;
 ; QL0      ; 0 / 16 ( 0 % )   ; --            ; --           ; --               ;
-; 3        ; 6 / 82 ( 7 % )   ; 2.5V          ; --           ; --               ;
+; 3        ; 1 / 82 ( 1 % )   ; 2.5V          ; --           ; --               ;
 ; 3B       ; 0 / 4 ( 0 % )    ; --            ; --           ; 2.5V             ;
 ; 3A       ; 0 / 2 ( 0 % )    ; --            ; --           ; 2.5V             ;
-; 4        ; 3 / 82 ( 4 % )   ; 2.5V          ; --           ; --               ;
-; 5        ; 1 / 66 ( 2 % )   ; 2.5V          ; --           ; --               ;
-; 6        ; 50 / 69 ( 72 % ) ; 2.5V          ; --           ; --               ;
-; 7        ; 3 / 80 ( 4 % )   ; 2.5V          ; --           ; --               ;
+; 4        ; 0 / 82 ( 0 % )   ; 2.5V          ; --           ; --               ;
+; 5        ; 49 / 66 ( 74 % ) ; 2.5V          ; --           ; --               ;
+; 6        ; 0 / 69 ( 0 % )   ; 2.5V          ; --           ; --               ;
+; 7        ; 0 / 80 ( 0 % )   ; 2.5V          ; --           ; --               ;
 ; 8A       ; 0 / 2 ( 0 % )    ; --            ; --           ; 2.5V             ;
-; 8        ; 3 / 81 ( 4 % )   ; 2.5V          ; --           ; --               ;
+; 8        ; 0 / 81 ( 0 % )   ; 2.5V          ; --           ; --               ;
 ; 8B       ; 0 / 4 ( 0 % )    ; --            ; --           ; 2.5V             ;
 ; 9        ; 4 / 4 ( 100 % )  ; 2.5V          ; --           ; --               ;
 +----------+------------------+---------------+--------------+------------------+
@@ -507,15 +493,15 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; AA19     ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AA20     ; 165        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA21     ; 195        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AA22     ; 235        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AA22     ; 235        ; 5        ; OperandoB[6]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AA23     ;            ; 5        ; VCCIO5                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; AA24     ;            ; 5        ; VCCIO5                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; AA25     ; 212        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AA26     ; 223        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; AA27     ; 222        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AA28     ; 246        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AA29     ; 247        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AA30     ; 250        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AA25     ; 212        ; 5        ; OperandoA[12]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AA26     ; 223        ; 5        ; OperandoB[8]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AA27     ; 222        ; 5        ; OperandoB[10]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AA28     ; 246        ; 5        ; OperandoA[5]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AA29     ; 247        ; 5        ; Soma[15]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AA30     ; 250        ; 5        ; OperandoA[14]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AB1      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB2      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB3      ; 29         ; QL0      ; GXB_NC                                                ;        ;              ;         ; --         ;                 ; --       ; --           ;
@@ -526,12 +512,12 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; AB8      ;            ;          ; VCCINT                                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; AB9      ; 36         ; 3        ; ^CONF_DONE                                            ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB10     ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AB11     ; 90         ; 3        ; Soma[32]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AB11     ; 90         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB12     ;            ; 3        ; VCCIO3                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; AB13     ; 96         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB14     ; 110        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB15     ;            ; 3        ; VCCIO3                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; AB16     ; 100        ; 3        ; Soma[23]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AB16     ; 100        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB17     ; 136        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; AB18     ;            ; 4        ; VCCIO4                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; AB19     ;            ; 4        ; VCCIO4                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -540,12 +526,12 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; AB22     ; 196        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB23     ;            ;          ; VCCD_PLL                                              ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; AB24     ;            ; --       ; VCCA                                                  ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; AB25     ; 213        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AB25     ; 213        ; 5        ; Soma[13]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AB26     ; 210        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AB27     ; 239        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AB28     ; 238        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AB29     ; 248        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AB30     ; 242        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AB27     ; 239        ; 5        ; Soma[14]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AB28     ; 238        ; 5        ; OperandoB[12]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AB29     ; 248        ; 5        ; OperandoA[4]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AB30     ; 242        ; 5        ; Soma[3]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AC1      ; 31         ; QL0      ; GXB_GND*                                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; AC2      ; 30         ; QL0      ; GXB_GND*                                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; AC3      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -570,12 +556,12 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; AC22     ;            ; 4        ; VCCIO4                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; AC23     ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AC24     ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AC25     ; 211        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AC25     ; 211        ; 5        ; Soma[2]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AC26     ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AC27     ; 237        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AC28     ; 236        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AC27     ; 237        ; 5        ; OperandoA[13]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AC28     ; 236        ; 5        ; OperandoB[2]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AC29     ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AC30     ; 243        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AC30     ; 243        ; 5        ; OperandoB[4]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AD1      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AD2      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AD3      ;            ; --       ; VCCA_GXB                                              ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -602,10 +588,10 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; AD24     ; 206        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AD25     ; 208        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; AD26     ; 209        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AD27     ; 233        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AD28     ; 232        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AD29     ; 241        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AD30     ; 240        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AD27     ; 233        ; 5        ; OperandoB[9]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AD28     ; 232        ; 5        ; OperandoB[14]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AD29     ; 241        ; 5        ; Soma[1]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AD30     ; 240        ; 5        ; Soma[4]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AE1      ;            ;          ; RREF                                                  ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; AE2      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AE3      ; 57         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -623,22 +609,22 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; AE15     ; 112        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE16     ; 135        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE17     ; 137        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AE18     ; 147        ; 4        ; Soma[20]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AE18     ; 147        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE19     ; 148        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE20     ; 166        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE21     ; 167        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE22     ; 173        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE23     ; 200        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AE24     ; 207        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AE25     ; 216        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AE26     ; 215        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AE27     ; 229        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AE28     ; 228        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AE29     ; 231        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AE30     ; 230        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AE25     ; 216        ; 5        ; Soma[11]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AE26     ; 215        ; 5        ; Soma[16]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AE27     ; 229        ; 5        ; OperandoA[6]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AE28     ; 228        ; 5        ; OperandoA[9]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AE29     ; 231        ; 5        ; OperandoB[7]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AE30     ; 230        ; 5        ; OperandoB[3]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AF1      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AF2      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AF3      ; 58         ; 3        ; Soma[31]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AF3      ; 58         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AF4      ; 55         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AF5      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AF6      ; 46         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -647,7 +633,7 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; AF9      ; 50         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AF10     ; 54         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AF11     ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AF12     ; 77         ; 3        ; Soma[27]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AF12     ; 77         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AF13     ; 81         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AF14     ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AF15     ; 113        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -662,10 +648,10 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; AF24     ; 204        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AF25     ; 205        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AF26     ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AF27     ; 225        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AF28     ; 224        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AF27     ; 225        ; 5        ; Soma[5]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AF28     ; 224        ; 5        ; OperandoB[0]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AF29     ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AF30     ; 226        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AF30     ; 226        ; 5        ; OperandoA[8]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AG1      ;            ;          ; NC                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; AG2      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AG3      ; 59         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -694,8 +680,8 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; AG26     ; 193        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AG27     ; 197        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AG28     ; 202        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AG29     ; 219        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AG30     ; 227        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AG29     ; 219        ; 5        ; OperandoA[11]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AG30     ; 227        ; 5        ; OperandoA[15]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AH1      ;            ;          ; NC                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; AH2      ; 64         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH3      ; 60         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -706,7 +692,7 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; AH8      ; 94         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH9      ; 79         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH10     ; 83         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AH11     ; 84         ; 3        ; Soma[18]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AH11     ; 84         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH12     ; 88         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH13     ; 92         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH14     ; 102        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -717,15 +703,15 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; AH19     ; 150        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH20     ; 160        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH21     ; 161        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AH22     ; 169        ; 4        ; Soma[29]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AH22     ; 169        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH23     ; 179        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH24     ; 187        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH25     ; 182        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH26     ; 194        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH27     ; 198        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AH28     ; 203        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AH29     ; 220        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; AH30     ; 217        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AH29     ; 220        ; 5        ; Soma[9]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AH30     ; 217        ; 5        ; OperandoA[10]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AJ1      ; 37         ; 3        ; ^nSTATUS                                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; AJ2      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AJ3      ; 65         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -755,7 +741,7 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; AJ27     ; 184        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AJ28     ; 189        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AJ29     ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AJ30     ; 218        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; AJ30     ; 218        ; 5        ; OperandoB[1]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AK2      ;            ;          ; NC                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; AK3      ; 70         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AK4      ; 71         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -776,7 +762,7 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; AK19     ; 146        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AK20     ; 155        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AK21     ; 156        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; AK22     ; 158        ; 4        ; Soma[28]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; AK22     ; 158        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AK23     ; 174        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AK24     ; 175        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AK25     ; 177        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -822,7 +808,7 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; C6       ; 474        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C7       ; 475        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C8       ; 487        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
-; C9       ; 485        ; 8        ; Soma[24]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; C9       ; 485        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C10      ; 451        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C11      ; 462        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C12      ; 454        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -842,8 +828,8 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; C26      ; 368        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C27      ; 345        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C28      ; 349        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; C29      ; 329        ; 6        ; Soma[4]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; C30      ; 328        ; 6        ; Soma[7]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; C29      ; 329        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; C30      ; 328        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; D1       ; 491        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D2       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; D3       ; 482        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -862,8 +848,8 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; D16      ; 428        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D17      ; 415        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D18      ; 408        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; D19      ; 404        ; 7        ; Soma[19]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
-; D20      ; 398        ; 7        ; Soma[30]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; D19      ; 404        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; D20      ; 398        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D21      ; 376        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D22      ; 374        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D23      ; 385        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -872,8 +858,8 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; D26      ; 369        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D27      ; 346        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; D28      ; 350        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; D29      ; 325        ; 6        ; OperandoB[5]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; D30      ; 324        ; 6        ; OperandoA[5]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; D29      ; 325        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; D30      ; 324        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; E1       ; 518        ; 9        ; #TMS                                                  ; input  ;              ;         ; --         ;                 ; --       ; --           ;
 ; E2       ; 516        ; 9        ; #TDI                                                  ; input  ;              ;         ; --         ;                 ; --       ; --           ;
 ; E3       ; 492        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -903,7 +889,7 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; E27      ; 338        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; E28      ; 337        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; E29      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; E30      ; 316        ; 6        ; OperandoA[6]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; E30      ; 316        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F1       ; 519        ; 9        ; #TDO                                                  ; output ;              ;         ; --         ;                 ; --       ; --           ;
 ; F2       ; 517        ; 9        ; #TCK                                                  ; input  ;              ;         ; --         ;                 ; --       ; --           ;
 ; F3       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -932,21 +918,21 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; F26      ; 342        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F27      ; 341        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F28      ; 336        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; F29      ; 335        ; 6        ; Soma[10]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; F30      ; 317        ; 6        ; OperandoB[11]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; F29      ; 335        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; F30      ; 317        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G1       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G2       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G3       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G4       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G5       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; G6       ; 500        ; 8        ; Soma[21]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; G6       ; 500        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G7       ; 502        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G8       ; 504        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G9       ; 511        ; 9        ; ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 2.5 V        ;         ; Column I/O ; N               ; no       ; On           ;
 ; G10      ; 480        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G11      ; 464        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; G12      ; 453        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; G13      ; 429        ; 8        ; Soma[26]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; G13      ; 429        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G14      ; 430        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G15      ; 426        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G16      ; 409        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -956,14 +942,14 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; G20      ; 379        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G21      ; 359        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; G22      ; 361        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; G23      ; 356        ; 7        ; Soma[17]                                              ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; G23      ; 356        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G24      ; 351        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G25      ; 343        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; G26      ; 340        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G27      ; 339        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; G28      ; 319        ; 6        ; OperandoA[7]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; G29      ; 318        ; 6        ; OperandoB[4]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; G30      ; 303        ; 6        ; OperandoA[15]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; G28      ; 319        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; G29      ; 318        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; G30      ; 303        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H1       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H2       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H3       ; 1          ; QL1      ; GXB_NC                                                ;        ;              ;         ; --         ;                 ; --       ; --           ;
@@ -988,12 +974,12 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; H22      ;            ; 7        ; VCCIO7                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; H23      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H24      ; 352        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; H25      ; 331        ; 6        ; Soma[2]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H25      ; 331        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H26      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H27      ; 333        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; H28      ; 326        ; 6        ; OperandoA[4]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H28      ; 326        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H29      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; H30      ; 304        ; 6        ; OperandoA[8]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H30      ; 304        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J1       ; 3          ; QL1      ; GXB_GND*                                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; J2       ; 2          ; QL1      ; GXB_GND*                                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; J3       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1018,12 +1004,12 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; J22      ;            ; 7        ; VCCIO7                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; J23      ;            ;          ; VCCD_PLL                                              ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; J24      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; J25      ; 332        ; 6        ; Soma[5]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; J26      ; 322        ; 6        ; Soma[6]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J25      ; 332        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J26      ; 322        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J27      ; 334        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; J28      ; 327        ; 6        ; Soma[1]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; J29      ; 306        ; 6        ; OperandoB[3]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; J30      ; 305        ; 6        ; OperandoB[15]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; J28      ; 327        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J29      ; 306        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; J30      ; 305        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K1       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; K2       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; K3       ; 5          ; QL1      ; GXB_NC                                                ;        ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1047,13 +1033,13 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; K21      ; 354        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; K22      ; 353        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; K23      ;            ; --       ; VCCA                                                  ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; K24      ; 330        ; 6        ; Soma[3]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; K25      ; 323        ; 6        ; Soma[0]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; K26      ; 321        ; 6        ; OperandoB[9]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; K27      ; 320        ; 6        ; OperandoB[12]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; K28      ; 308        ; 6        ; OperandoA[14]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; K29      ; 307        ; 6        ; OperandoA[13]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; K30      ; 301        ; 6        ; OperandoA[10]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; K24      ; 330        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; K25      ; 323        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; K26      ; 321        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; K27      ; 320        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; K28      ; 308        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; K29      ; 307        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; K30      ; 301        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L1       ; 7          ; QL1      ; GXB_GND*                                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; L2       ; 6          ; QL1      ; GXB_GND*                                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; L3       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1078,12 +1064,12 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; L22      ;            ; 6        ; VCCIO6                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; L23      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L24      ;            ; 6        ; VCCIO6                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; L25      ; 315        ; 6        ; OperandoB[13]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L25      ; 315        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; L26      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; L27      ; 312        ; 6        ; OperandoA[2]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; L28      ; 311        ; 6        ; OperandoA[1]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L27      ; 312        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; L28      ; 311        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L29      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; L30      ; 302        ; 6        ; OperandoB[14]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; L30      ; 302        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M1       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M2       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M3       ; 9          ; QL1      ; GXB_NC                                                ;        ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1104,16 +1090,16 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; M18      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; M19      ;            ;          ; VCCINT                                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; M20      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; M21      ; 314        ; 6        ; OperandoB[2]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; M22      ; 313        ; 6        ; OperandoB[6]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; M21      ; 314        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; M22      ; 313        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M23      ;            ; 6        ; VCCIO6                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; M24      ;            ; 6        ; VCCIO6                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; M25      ; 297        ; 6        ; OperandoB[10]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; M26      ; 293        ; 6        ; Soma[12]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; M27      ; 300        ; 6        ; OperandoB[8]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; M28      ; 299        ; 6        ; OperandoB[7]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; M29      ; 296        ; 6        ; Soma[9]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; M30      ; 295        ; 6        ; Soma[8]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; M25      ; 297        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; M26      ; 293        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; M27      ; 300        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; M28      ; 299        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; M29      ; 296        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; M30      ; 295        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N1       ; 11         ; QL1      ; GXB_GND*                                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; N2       ; 10         ; QL1      ; GXB_GND*                                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; N3       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1134,15 +1120,15 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; N18      ;            ;          ; VCCINT                                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; N19      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N20      ;            ;          ; VCCINT                                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; N21      ; 309        ; 6        ; OperandoA[11]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N21      ; 309        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N22      ;            ; 6        ; VCCIO6                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; N23      ;            ; 6        ; VCCIO6                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; N24      ; 298        ; 6        ; OperandoA[3]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; N25      ; 294        ; 6        ; OperandoA[12]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; N26      ; 286        ; 6        ; Soma[14]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; N27      ; 292        ; 6        ; Soma[15]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; N28      ; 291        ; 6        ; Soma[16]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; N29      ; 288        ; 6        ; Soma[13]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N24      ; 298        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N25      ; 294        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N26      ; 286        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; N27      ; 292        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N28      ; 291        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N29      ; 288        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N30      ; 287        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P1       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P2       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1164,16 +1150,16 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; P18      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P19      ;            ;          ; VCCINT                                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; P20      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; P21      ; 310        ; 6        ; OperandoA[9]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P21      ; 310        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P22      ;            ; 6        ; VCCIO6                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; P23      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P24      ;            ; 6        ; VCCIO6                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; P25      ; 289        ; 6        ; Soma[11]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P25      ; 289        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P26      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P27      ; 285        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P28      ; 284        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P29      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; P30      ; 282        ; 6        ; Soma[22]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P30      ; 282        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R1       ; 15         ; QL1      ; GXB_GND*                                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; R2       ; 14         ; QL1      ; GXB_GND*                                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; R3       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1197,7 +1183,7 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; R21      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; R22      ;            ; 6        ; VCCIO6                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; R23      ;            ; 6        ; VCCIO6                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; R24      ; 290        ; 6        ; OperandoB[1]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R24      ; 290        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R25      ; 279        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R26      ; 278        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R27      ; 281        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1224,16 +1210,16 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; T18      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; T19      ;            ;          ; VCCINT                                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; T20      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; T21      ; 251        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; T21      ; 251        ; 5        ; OperandoB[15]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; T22      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; T23      ; 269        ; 5        ; Soma[25]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T23      ; 269        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; T24      ; 268        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; T25      ; 255        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; T25      ; 255        ; 5        ; Soma[0]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; T26      ; 271        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; T27      ; 270        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; T28      ; 277        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; T29      ; 275        ; 6        ; OperandoA[0]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; T30      ; 274        ; 6        ; OperandoB[0]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T29      ; 275        ; 6        ; GND+                                                  ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; T30      ; 274        ; 6        ; GND+                                                  ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; U1       ; 19         ; QL0      ; GXB_GND*                                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; U2       ; 18         ; QL0      ; GXB_GND*                                              ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; U3       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1254,11 +1240,11 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; U18      ;            ;          ; VCCINT                                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; U19      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; U20      ;            ;          ; VCCINT                                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; U21      ; 252        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; U21      ; 252        ; 5        ; OperandoA[3]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; U22      ;            ; 5        ; VCCIO5                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; U23      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; U24      ;            ; 5        ; VCCIO5                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; U25      ; 256        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; U25      ; 256        ; 5        ; Soma[8]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; U26      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; U27      ; 266        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; U28      ; 265        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1284,12 +1270,12 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; V18      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; V19      ;            ;          ; VCCINT                                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; V20      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; V21      ; 244        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; V21      ; 244        ; 5        ; Soma[10]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; V22      ;            ; 5        ; VCCIO5                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; V23      ;            ; 5        ; VCCIO5                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; V24      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; V25      ; 254        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; V26      ; 253        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; V25      ; 254        ; 5        ; OperandoA[2]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; V26      ; 253        ; 5        ; OperandoA[1]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; V27      ; 264        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V28      ; 263        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V29      ; 273        ; 5        ; GND+                                                  ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
@@ -1318,10 +1304,10 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; W22      ;            ; 5        ; VCCIO5                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; W23      ;            ; 5        ; VCCIO5                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; W24      ;            ; 5        ; VCCIO5                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; W25      ; 258        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; W26      ; 257        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; W25      ; 258        ; 5        ; Soma[6]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; W26      ; 257        ; 5        ; OperandoB[11]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; W27      ; 260        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; W28      ; 259        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; W28      ; 259        ; 5        ; OperandoA[7]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; W29      ; 262        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; W30      ; 261        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y1       ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1345,15 +1331,15 @@ The pin-out file can be found in D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Mu
 ; Y19      ; 164        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y20      ; 191        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y21      ; 192        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; Y22      ; 234        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; Y22      ; 234        ; 5        ; OperandoB[5]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; Y23      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; Y24      ;            ; 5        ; VCCIO5                                                ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; Y25      ; 214        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; Y25      ; 214        ; 5        ; Soma[7]                                               ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; Y26      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; Y27      ; 221        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; Y28      ; 245        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; Y27      ; 221        ; 5        ; OperandoB[13]                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; Y28      ; 245        ; 5        ; Soma[12]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; Y29      ;            ;          ; GND                                                   ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; Y30      ; 249        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                       ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; Y30      ; 249        ; 5        ; OperandoA[0]                                          ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 +----------+------------+----------+-------------------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
@@ -1380,22 +1366,6 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; Soma[14]      ; Incomplete set of assignments ;
 ; Soma[15]      ; Incomplete set of assignments ;
 ; Soma[16]      ; Incomplete set of assignments ;
-; Soma[17]      ; Incomplete set of assignments ;
-; Soma[18]      ; Incomplete set of assignments ;
-; Soma[19]      ; Incomplete set of assignments ;
-; Soma[20]      ; Incomplete set of assignments ;
-; Soma[21]      ; Incomplete set of assignments ;
-; Soma[22]      ; Incomplete set of assignments ;
-; Soma[23]      ; Incomplete set of assignments ;
-; Soma[24]      ; Incomplete set of assignments ;
-; Soma[25]      ; Incomplete set of assignments ;
-; Soma[26]      ; Incomplete set of assignments ;
-; Soma[27]      ; Incomplete set of assignments ;
-; Soma[28]      ; Incomplete set of assignments ;
-; Soma[29]      ; Incomplete set of assignments ;
-; Soma[30]      ; Incomplete set of assignments ;
-; Soma[31]      ; Incomplete set of assignments ;
-; Soma[32]      ; Incomplete set of assignments ;
 ; OperandoB[0]  ; Incomplete set of assignments ;
 ; OperandoA[0]  ; Incomplete set of assignments ;
 ; OperandoB[1]  ; Incomplete set of assignments ;
@@ -1445,22 +1415,6 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; Soma[14]      ; Missing location assignment   ;
 ; Soma[15]      ; Missing location assignment   ;
 ; Soma[16]      ; Missing location assignment   ;
-; Soma[17]      ; Missing location assignment   ;
-; Soma[18]      ; Missing location assignment   ;
-; Soma[19]      ; Missing location assignment   ;
-; Soma[20]      ; Missing location assignment   ;
-; Soma[21]      ; Missing location assignment   ;
-; Soma[22]      ; Missing location assignment   ;
-; Soma[23]      ; Missing location assignment   ;
-; Soma[24]      ; Missing location assignment   ;
-; Soma[25]      ; Missing location assignment   ;
-; Soma[26]      ; Missing location assignment   ;
-; Soma[27]      ; Missing location assignment   ;
-; Soma[28]      ; Missing location assignment   ;
-; Soma[29]      ; Missing location assignment   ;
-; Soma[30]      ; Missing location assignment   ;
-; Soma[31]      ; Missing location assignment   ;
-; Soma[32]      ; Missing location assignment   ;
 ; OperandoB[0]  ; Missing location assignment   ;
 ; OperandoA[0]  ; Missing location assignment   ;
 ; OperandoB[1]  ; Missing location assignment   ;
@@ -1501,7 +1455,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+-------------+--------------+
-; |Adder                     ; 17 (17)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 65   ; 0            ; 17 (17)      ; 0 (0)             ; 0 (0)            ; |Adder              ; Adder       ; work         ;
+; |Adder                     ; 17 (17)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0         ; 49   ; 0            ; 17 (17)      ; 0 (0)             ; 0 (0)            ; |Adder              ; Adder       ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1528,54 +1482,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Soma[14]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; Soma[15]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; Soma[16]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[17]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[18]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[19]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[20]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[21]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[22]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[23]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[24]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[25]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[26]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[27]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[28]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[29]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[30]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[31]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Soma[32]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; OperandoB[0]  ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; OperandoA[0]  ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; OperandoB[0]  ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
+; OperandoA[0]  ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
 ; OperandoB[1]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
-; OperandoA[1]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
+; OperandoA[1]  ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
 ; OperandoB[2]  ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
 ; OperandoA[2]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
 ; OperandoB[3]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
 ; OperandoA[3]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
 ; OperandoB[4]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
 ; OperandoA[4]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
-; OperandoB[5]  ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
-; OperandoA[5]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
-; OperandoB[6]  ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
-; OperandoA[6]  ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
+; OperandoB[5]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
+; OperandoA[5]  ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
+; OperandoB[6]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
+; OperandoA[6]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
 ; OperandoB[7]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
 ; OperandoA[7]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
-; OperandoB[8]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
+; OperandoB[8]  ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
 ; OperandoA[8]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
 ; OperandoB[9]  ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
 ; OperandoA[9]  ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
 ; OperandoB[10] ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
 ; OperandoA[10] ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
 ; OperandoB[11] ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
-; OperandoA[11] ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
-; OperandoB[12] ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
-; OperandoA[12] ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
+; OperandoA[11] ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
+; OperandoB[12] ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
+; OperandoA[12] ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
 ; OperandoB[13] ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
 ; OperandoA[13] ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
 ; OperandoB[14] ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
 ; OperandoA[14] ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
-; OperandoB[15] ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
-; OperandoA[15] ; Input    ; --            ; (6) 1219 ps   ; --                    ; --  ; --   ;
+; OperandoB[15] ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
+; OperandoA[15] ; Input    ; (6) 1219 ps   ; --            ; --                    ; --  ; --   ;
 +---------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -1585,11 +1523,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
 ; OperandoB[0]        ;                   ;         ;
+;      - Add0~0       ; 1                 ; 6       ;
 ; OperandoA[0]        ;                   ;         ;
+;      - Add0~0       ; 1                 ; 6       ;
 ; OperandoB[1]        ;                   ;         ;
 ;      - Add0~2       ; 0                 ; 6       ;
 ; OperandoA[1]        ;                   ;         ;
-;      - Add0~2       ; 0                 ; 6       ;
+;      - Add0~2       ; 1                 ; 6       ;
 ; OperandoB[2]        ;                   ;         ;
 ;      - Add0~4       ; 1                 ; 6       ;
 ; OperandoA[2]        ;                   ;         ;
@@ -1603,19 +1543,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; OperandoA[4]        ;                   ;         ;
 ;      - Add0~8       ; 0                 ; 6       ;
 ; OperandoB[5]        ;                   ;         ;
-;      - Add0~10      ; 1                 ; 6       ;
-; OperandoA[5]        ;                   ;         ;
 ;      - Add0~10      ; 0                 ; 6       ;
+; OperandoA[5]        ;                   ;         ;
+;      - Add0~10      ; 1                 ; 6       ;
 ; OperandoB[6]        ;                   ;         ;
-;      - Add0~12      ; 1                 ; 6       ;
+;      - Add0~12      ; 0                 ; 6       ;
 ; OperandoA[6]        ;                   ;         ;
-;      - Add0~12      ; 1                 ; 6       ;
+;      - Add0~12      ; 0                 ; 6       ;
 ; OperandoB[7]        ;                   ;         ;
 ;      - Add0~14      ; 0                 ; 6       ;
 ; OperandoA[7]        ;                   ;         ;
 ;      - Add0~14      ; 0                 ; 6       ;
 ; OperandoB[8]        ;                   ;         ;
-;      - Add0~16      ; 0                 ; 6       ;
+;      - Add0~16      ; 1                 ; 6       ;
 ; OperandoA[8]        ;                   ;         ;
 ;      - Add0~16      ; 0                 ; 6       ;
 ; OperandoB[9]        ;                   ;         ;
@@ -1629,11 +1569,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; OperandoB[11]       ;                   ;         ;
 ;      - Add0~22      ; 0                 ; 6       ;
 ; OperandoA[11]       ;                   ;         ;
-;      - Add0~22      ; 1                 ; 6       ;
+;      - Add0~22      ; 0                 ; 6       ;
 ; OperandoB[12]       ;                   ;         ;
-;      - Add0~24      ; 0                 ; 6       ;
+;      - Add0~24      ; 1                 ; 6       ;
 ; OperandoA[12]       ;                   ;         ;
-;      - Add0~24      ; 0                 ; 6       ;
+;      - Add0~24      ; 1                 ; 6       ;
 ; OperandoB[13]       ;                   ;         ;
 ;      - Add0~26      ; 1                 ; 6       ;
 ; OperandoA[13]       ;                   ;         ;
@@ -1643,9 +1583,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; OperandoA[14]       ;                   ;         ;
 ;      - Add0~28      ; 0                 ; 6       ;
 ; OperandoB[15]       ;                   ;         ;
-;      - Add0~30      ; 1                 ; 6       ;
+;      - Add0~30      ; 0                 ; 6       ;
 ; OperandoA[15]       ;                   ;         ;
-;      - Add0~30      ; 1                 ; 6       ;
+;      - Add0~30      ; 0                 ; 6       ;
 +---------------------+-------------------+---------+
 
 
@@ -1655,8 +1595,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Routing Resource Type             ; Usage                  ;
 +-----------------------------------+------------------------+
 ; Block interconnects               ; 49 / 445,464 ( < 1 % ) ;
-; C16 interconnects                 ; 1 / 12,402 ( < 1 % )   ;
-; C4 interconnects                  ; 97 / 263,952 ( < 1 % ) ;
+; C16 interconnects                 ; 4 / 12,402 ( < 1 % )   ;
+; C4 interconnects                  ; 96 / 263,952 ( < 1 % ) ;
 ; Direct links                      ; 0 / 445,464 ( 0 % )    ;
 ; GXB block output buffers          ; 0 / 3,600 ( 0 % )      ;
 ; Global clocks                     ; 0 / 30 ( 0 % )         ;
@@ -1665,8 +1605,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Interquad TXRX PCSRX outputs      ; 0 / 8 ( 0 % )          ;
 ; Interquad TXRX PCSTX outputs      ; 0 / 8 ( 0 % )          ;
 ; Local interconnects               ; 0 / 149,760 ( 0 % )    ;
-; R24 interconnects                 ; 1 / 12,690 ( < 1 % )   ;
-; R4 interconnects                  ; 15 / 370,260 ( < 1 % ) ;
+; R24 interconnects                 ; 3 / 12,690 ( < 1 % )   ;
+; R4 interconnects                  ; 12 / 370,260 ( < 1 % ) ;
 +-----------------------------------+------------------------+
 
 
@@ -1813,9 +1753,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 65        ; 0            ; 0            ; 65        ; 65        ; 0            ; 33           ; 0            ; 0            ; 32           ; 0            ; 33           ; 32           ; 0            ; 0            ; 0            ; 33           ; 0            ; 0            ; 0            ; 0            ; 0            ; 65        ; 0            ; 0            ;
+; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 49        ; 0            ; 0            ; 49        ; 49        ; 0            ; 17           ; 0            ; 0            ; 32           ; 0            ; 17           ; 32           ; 0            ; 0            ; 0            ; 17           ; 0            ; 0            ; 0            ; 0            ; 0            ; 49        ; 0            ; 0            ;
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 65           ; 65           ; 65           ; 65           ; 65           ; 0         ; 65           ; 65           ; 0         ; 0         ; 65           ; 32           ; 65           ; 65           ; 33           ; 65           ; 32           ; 33           ; 65           ; 65           ; 65           ; 32           ; 65           ; 65           ; 65           ; 65           ; 65           ; 0         ; 65           ; 65           ;
+; Total Inapplicable ; 49           ; 49           ; 49           ; 49           ; 49           ; 0         ; 49           ; 49           ; 0         ; 0         ; 49           ; 32           ; 49           ; 49           ; 17           ; 49           ; 32           ; 17           ; 49           ; 49           ; 49           ; 32           ; 49           ; 49           ; 49           ; 49           ; 49           ; 0         ; 49           ; 49           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; Soma[0]            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; Soma[1]            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1834,22 +1774,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Soma[14]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; Soma[15]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; Soma[16]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[17]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[18]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[19]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[20]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[21]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[22]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[23]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[24]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[25]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[26]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[27]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[28]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[29]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[30]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[31]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Soma[32]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; OperandoB[0]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; OperandoA[0]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; OperandoB[1]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1943,7 +1867,7 @@ Info (169124): Fitter converted 5 user pins into dedicated programming pins
     Info (169125): Pin ~ALTERA_NCSO~ is reserved at location B4
     Info (169125): Pin ~ALTERA_DCLK~ is reserved at location B3
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Critical Warning (169085): No exact pin location assignment(s) for 65 pins of 65 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Critical Warning (169085): No exact pin location assignment(s) for 49 pins of 49 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Adder.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -1955,7 +1879,7 @@ Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info (176211): Number of I/O pins in group: 65 (unused VREF, 2.5V VCCIO, 32 input, 33 output, 0 bidirectional)
+    Info (176211): Number of I/O pins in group: 49 (unused VREF, 2.5V VCCIO, 32 input, 17 output, 0 bidirectional)
         Info (176212): I/O standards used: 2.5 V.
 Info (176215): I/O bank details before I/O pin placement
     Info (176214): Statistics of I/O banks
@@ -1972,21 +1896,21 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  81 pins available
         Info (176213): I/O bank number 8B does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  2 pins available
         Info (176213): I/O bank number 9 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  0 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X106_Y57 to location X117_Y68
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X106_Y11 to location X117_Y22
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.08 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1994,10 +1918,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/output_files/Adder.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5825 megabytes
-    Info: Processing ended: Sat Jun 10 15:39:50 2023
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 5831 megabytes
+    Info: Processing ended: Fri Jun 16 16:02:15 2023
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +----------------------------+

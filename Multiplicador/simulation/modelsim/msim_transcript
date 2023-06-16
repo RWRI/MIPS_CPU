@@ -12,69 +12,69 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter {D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:04:18 on Jun 10,2023
+# Start time: 09:46:40 on Jun 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter" D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter.v 
 # -- Compiling module Counter
 # 
 # Top level modules:
 # 	Counter
-# End time: 16:04:19 on Jun 10,2023, Elapsed time: 0:00:01
+# End time: 09:46:40 on Jun 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/CONTROL {D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/CONTROL/CONTROL.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:04:19 on Jun 10,2023
+# Start time: 09:46:40 on Jun 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/CONTROL" D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/CONTROL/CONTROL.v 
 # -- Compiling module CONTROL
 # 
 # Top level modules:
 # 	CONTROL
-# End time: 16:04:19 on Jun 10,2023, Elapsed time: 0:00:00
+# End time: 09:46:40 on Jun 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder {D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:04:19 on Jun 10,2023
+# Start time: 09:46:40 on Jun 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder" D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v 
 # -- Compiling module Adder
 # 
 # Top level modules:
 # 	Adder
-# End time: 16:04:19 on Jun 10,2023, Elapsed time: 0:00:00
+# End time: 09:46:40 on Jun 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/ACC {D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/ACC/ACC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:04:19 on Jun 10,2023
+# Start time: 09:46:40 on Jun 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/ACC" D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/ACC/ACC.v 
 # -- Compiling module ACC
 # 
 # Top level modules:
 # 	ACC
-# End time: 16:04:19 on Jun 10,2023, Elapsed time: 0:00:00
+# End time: 09:46:40 on Jun 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador {D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:04:19 on Jun 10,2023
+# Start time: 09:46:40 on Jun 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador" D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v 
 # -- Compiling module Multiplicador
 # 
 # Top level modules:
 # 	Multiplicador
-# End time: 16:04:19 on Jun 10,2023, Elapsed time: 0:00:00
+# End time: 09:46:40 on Jun 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador {D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador_TB.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:04:19 on Jun 10,2023
+# Start time: 09:46:40 on Jun 12,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador" D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador_TB.v 
 # -- Compiling module Multiplicador_TB
 # 
 # Top level modules:
 # 	Multiplicador_TB
-# End time: 16:04:19 on Jun 10,2023, Elapsed time: 0:00:00
+# End time: 09:46:40 on Jun 12,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  Multiplicador_TB
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=""+acc"" Multiplicador_TB 
-# Start time: 16:04:19 on Jun 10,2023
+# Start time: 09:46:42 on Jun 12,2023
 # Loading work.Multiplicador_TB
 # Loading work.Multiplicador
 # Loading work.ACC
@@ -100,7 +100,5 @@
 #    Time: 44565180 ns  Iteration: 0  Instance: /Multiplicador_TB
 # 1
 # Break in Module Multiplicador_TB at D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador_TB.v line 69
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# End time: 16:06:15 on Jun 10,2023, Elapsed time: 0:01:56
-# Errors: 1, Warnings: 2
+# End time: 09:47:54 on Jun 12,2023, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 1

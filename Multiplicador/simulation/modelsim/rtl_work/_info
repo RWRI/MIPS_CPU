@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/simulation/modelsim
 vACC
-Z1 !s110 1686423859
+Z1 !s110 1686574000
 !i10b 1
 !s100 FfTj59SSf@H]QmeEzaGZ90
 IFE<eOZg:90kooA7iP2DXL0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1686421697
+w1686424303
 8D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/ACC/ACC.v
 FD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/ACC/ACC.v
 L0 1
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1686423859.000000
+Z4 !s108 1686574000.000000
 !s107 D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/ACC/ACC.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/ACC|D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/ACC/ACC.v|
 !i113 1
@@ -38,7 +38,7 @@ R1
 Ik0jLW]=f[m`lJkbAaBnY;3
 R2
 R0
-w1686419202
+w1686424304
 8D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v
 FD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Adder/Adder.v
 L0 1
@@ -84,7 +84,7 @@ R1
 I^NEnD9Qaimbl;k2miAc6J1
 R2
 R0
-w1686420783
+Z7 w1686424305
 8D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter.v
 FD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter.v
 L0 1
@@ -92,7 +92,7 @@ R3
 r1
 !s85 0
 31
-!s108 1686423858.000000
+R4
 !s107 D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter|D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Counter/Counter.v|
 !i113 1
@@ -107,7 +107,7 @@ R1
 IgL;DG>95h[85I[2kQ>6oI0
 R2
 R0
-w1686419076
+R7
 8D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v
 FD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v
 L0 1
@@ -120,7 +120,7 @@ R4
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador|D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v|
 !i113 1
 R5
-Z7 !s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador
+Z8 !s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador
 R6
 n@multiplicador
 vMultiplicador_TB
@@ -130,7 +130,7 @@ R1
 INzhzT9KaYYo;R[ld3=1B03
 R2
 R0
-w1686423804
+R7
 8D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador_TB.v
 FD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador_TB.v
 L0 3
@@ -143,6 +143,6 @@ R4
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador|D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador_TB.v|
 !i113 1
 R5
-R7
+R8
 R6
 n@multiplicador_@t@b

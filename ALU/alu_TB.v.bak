@@ -1,0 +1,37 @@
+`timescale 1ns / 1ps  
+module alu_TB();
+	//Inputs
+	reg[31:0] a, b;
+	reg[1:0] sel;
+
+	//Outputs
+	wire[31:0] out;
+
+	alu DUT(
+		.a(a), 
+		.b(b), 
+		.sel(sel), 
+		.out(out)
+	
+	);
+
+	initial begin
+		a = 32'h0000_03E8; 
+		b = 32'h0000_07D0; 
+		sel = 2'b00;
+		#10;
+		a = 32'h1111_1111; 
+		b = 32'h4422_0EA1; 
+		sel = 2'b01;
+		#10;
+		a = 32'hA0A0_A0A0; 
+		b = 32'h0021_3120; 
+		sel = 2'b10;
+		#10;
+		a = 32'hF0F0_F0F0; 
+		b = 32'h1574_1674; 
+		sel = 2'b11;
+		#10 $stop;
+	end
+ 
+endmodule 
