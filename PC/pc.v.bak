@@ -1,0 +1,15 @@
+module pc(Clk,rst,pc_address);
+
+	input Clk, rst; 
+	output [9:0] pc_address;
+	reg [9:0]reg_pc = 10'd0;
+
+	always@(posedge Clk or posedge rst) begin 
+		if(rst)
+			reg_pc <= 10'd0;
+		else
+			reg_pc <= reg_pc + 10'd1;
+	end
+
+	assign pc_address = reg_pc;
+endmodule 

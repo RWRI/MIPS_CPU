@@ -1,0 +1,33 @@
+|pc
+pc_endereco[0] << rpc[0].DB_MAX_OUTPUT_PORT_TYPE
+pc_endereco[1] << rpc[1].DB_MAX_OUTPUT_PORT_TYPE
+pc_endereco[2] << rpc[2].DB_MAX_OUTPUT_PORT_TYPE
+pc_endereco[3] << rpc[3].DB_MAX_OUTPUT_PORT_TYPE
+pc_endereco[4] << rpc[4].DB_MAX_OUTPUT_PORT_TYPE
+pc_endereco[5] << rpc[5].DB_MAX_OUTPUT_PORT_TYPE
+pc_endereco[6] << rpc[6].DB_MAX_OUTPUT_PORT_TYPE
+pc_endereco[7] << rpc[7].DB_MAX_OUTPUT_PORT_TYPE
+pc_endereco[8] << rpc[8].DB_MAX_OUTPUT_PORT_TYPE
+pc_endereco[9] << rpc[9].DB_MAX_OUTPUT_PORT_TYPE
+Clk => rpc[0].CLK
+Clk => rpc[1].CLK
+Clk => rpc[2].CLK
+Clk => rpc[3].CLK
+Clk => rpc[4].CLK
+Clk => rpc[5].CLK
+Clk => rpc[6].CLK
+Clk => rpc[7].CLK
+Clk => rpc[8].CLK
+Clk => rpc[9].CLK
+rst => rpc[0].ACLR
+rst => rpc[1].ACLR
+rst => rpc[2].ACLR
+rst => rpc[3].ACLR
+rst => rpc[4].ACLR
+rst => rpc[5].ACLR
+rst => rpc[6].ACLR
+rst => rpc[7].ACLR
+rst => rpc[8].ACLR
+rst => rpc[9].ACLR
+
+

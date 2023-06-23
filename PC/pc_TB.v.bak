@@ -1,0 +1,29 @@
+`timescale 1ns/10ps
+
+module pc_TB();
+
+	reg Clk, rst;
+	wire [9:0] pc;
+
+	pc DUT(
+		.Clk(Clk),
+		.rst(rst),
+		.pc_address(pc)
+	);
+	
+	always #2 Clk = ~Clk;
+		
+	initial 
+	begin
+		Clk = 0;
+		rst = 1;
+		#5
+		rst = 0;
+		#120
+		rst = 1;
+		#4 rst = 0;
+		
+		#20 $stop;
+	end
+
+endmodule 

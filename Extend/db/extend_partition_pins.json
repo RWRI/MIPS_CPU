@@ -1,0 +1,201 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "saida[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[7]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[8]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[9]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[10]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[11]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[12]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[13]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[14]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[15]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[16]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[17]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[18]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[19]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[20]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[21]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[22]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[23]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[24]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[25]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[26]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[27]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[28]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[29]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[30]",
+					"strict" : false
+				},
+				{
+					"name" : "saida[31]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[0]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[1]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[2]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[3]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[4]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[5]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[6]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[7]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[8]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[9]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[10]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[11]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[12]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[13]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[14]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

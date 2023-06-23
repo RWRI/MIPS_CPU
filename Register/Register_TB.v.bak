@@ -1,0 +1,31 @@
+`timescale 1ns/10ps
+module Register_TB();
+
+	reg rst, Clk;
+	reg [31:0] in;
+	wire [31:0] out;
+	
+	Register DUT(
+		.Clk(Clk),
+		.in(in),
+		.out(out),
+		.rst(rst)
+	);
+	
+	always
+		#2 Clk = ~Clk;
+	
+	initial 
+	begin
+		rst = 1;
+		Clk = 0;
+		in = 0;
+		#4 rst = 0;
+		#10 in = 32'h00000001;
+		#16 in = 32'h00000010;
+		#18 in = 32'hffffffff;
+		#20 $stop;
+	end
+	
+endmodule
+	

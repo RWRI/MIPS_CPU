@@ -1,0 +1,78 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Register/simulation/modelsim
+vhard_block
+Z1 !s110 1687550211
+!i10b 1
+!s100 =Zk6Jm0m;daZbeVX7^_8O2
+I=8;cLX7g7lLlG>Hinm=6;3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1687549836
+Z4 8Register_min_1200mv_-40c_fast.vo
+Z5 FRegister_min_1200mv_-40c_fast.vo
+L0 2210
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1687550210.000000
+Z8 !s107 Register_min_1200mv_-40c_fast.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Register_min_1200mv_-40c_fast.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vRegister
+R1
+!i10b 1
+!s100 Yoi09iELb@a0gn_f4>M4P3
+ICUPFNZ;9JBHWLL_ajAHJ13
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@register
+vRegister_TB
+R1
+!i10b 1
+!s100 eP6f7N_VP4_[]8zM0:ld<0
+IBZ9CXf^GI1zb>AMVPU<^02
+R2
+R0
+w1687550200
+8D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Register/Register_TB.v
+FD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Register/Register_TB.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1687550211.000000
+!s107 D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Register/Register_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Register|D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Register/Register_TB.v|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Register
+R12
+n@register_@t@b
