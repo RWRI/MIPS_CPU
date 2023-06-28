@@ -1,0 +1,22 @@
+`timescale 1ns/10ps
+
+module ADDRDecoding_TB();
+
+	reg [31:0] address;
+	wire cs;
+	ADDRDecoding DUT(
+		.address(address),
+		.cs(cs)
+	);
+
+	integer i;
+
+	initial begin
+		for(i=32'h00000000;i<32'h0000FFFF;i=i+1)begin
+			address = i;
+			#100;
+		end
+		$stop;
+	end
+
+endmodule 

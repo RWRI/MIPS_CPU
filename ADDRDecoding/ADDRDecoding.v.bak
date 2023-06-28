@@ -1,0 +1,11 @@
+module ADDRDecoding(address,cs);
+
+	input [31:0] address;
+	output cs;
+	
+	//Memória interna de 1KWord (1KB) => Começando em 9 * 500h = 2D00 h
+	//Memória vai de 2D00h à 30FFh
+	
+	assign cs = (address[31:14] == 0) && address[13] && 
+		((~address[12] && (address[11] && address[10]) && (address[9] || address[8]))|| (address[12] && (address[11:8] == 0)));
+endmodule
