@@ -45,19 +45,19 @@ module Multiplicador_TB();
 //	end
 
 	//para testar todas as possibilidades
-	integer i, j;
+	integer i;
 	reg fail = 0;
 	initial begin
 		multiplicando = 0;
 		multiplicador = 0;
 		#680
 			
-		multiplicando = 65536;		
+		multiplicando = 65535;		
 		for(i = 0; i < 65536;i = i+1) begin
 			multiplicador = i;
 			#680 
 			if(done) begin
-				if(produto != i*j)begin
+				if(produto != i*multiplicando)begin
 					$display("Erro:%dx%d = %d",i,1,produto);
 					fail = 1;
 				end
