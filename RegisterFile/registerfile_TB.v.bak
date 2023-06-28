@@ -1,0 +1,64 @@
+`timescale 1ns/10ps
+
+module registerfile_TB ();
+	reg Clk, rst, write;
+	reg [15:0] entrada;
+	reg [4:0] rs, rt, rd; 	
+	wire [15:0] a, b; 
+	
+	registerfile DUT(
+		.Clk(Clk),
+		.rst(rst),
+		.write(write),
+		.entrada(entrada),
+		.rs(rs),
+		.rt(rt),
+		.rd(rd),
+		.a(a),
+		.b(b)
+	);
+	
+	always #2 Clk = ~Clk;
+	
+	initial begin
+		Clk = 0;
+		rst=1;
+		write = 0;
+		entrada = 0;
+		rs = 0;
+		rt = 0;
+		rd = 0;
+		#5 rst=0;
+		
+		entrada = 16'd5678;
+		rd = 5'h1;
+		write = 1;
+		#10 write = 0;
+		
+		#20 entrada = 16'd0001;
+		rd = 5'h2;
+		write = 1;
+		#10 write = 0;
+		
+		#20 entrada = 16'd0005;
+		rd = 5'h3;
+		write = 1;
+		#10 write = 0;
+		
+		#20 entrada = 16'd1111;
+		rd = 5'h4;
+		write = 1;
+		#10 write = 0;
+		
+		#20 rs = 5'h1;
+		rt = 5'h3;
+		#20;
+		rs = 5'h4;
+		rt = 5'h2;
+		#20 $stop;
+		
+	end
+	
+	
+	
+endmodule

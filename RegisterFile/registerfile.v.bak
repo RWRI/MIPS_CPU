@@ -1,0 +1,23 @@
+module registerfile (Clk,rst,write,entrada,rs,rd,rt,a,b);
+
+	input Clk, rst, write;
+	input [31:0] entrada;
+	input [4:0] rs, rt, rd;
+	output [31:0] a, b;
+	reg [31:0] registros [31:0];
+	integer i;
+	
+	assign a = registros[rs];
+	assign b = registros[rt];
+
+	always @ (posedge Clk, posedge rst) begin 
+		
+		if (rst)
+			for(i = 0; i <= 31; i = i+1) 
+				registros[i] = 32'h00000000;
+				
+		else if (write)
+				registros[rd] <= entrada;
+	end 
+
+endmodule 
