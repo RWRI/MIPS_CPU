@@ -1,0 +1,58 @@
+`timescale 10ns/10ps
+
+module datamemory_TB();
+	
+	reg  Clk, rd_wr;
+	reg  [31:0] entrada;
+	reg  [9:0] endereco;
+	wire [31:0] saida;
+	
+	integer i;
+	
+	datamemory DUT(
+		.in(in),
+		.address(address),
+		.Clk(Clk),
+		.rd_wr(rd_wr),
+		.out(out)
+	);
+
+	always 
+		#2 Clk = ~Clk;
+
+	initial 
+	begin
+		Clk = 0;
+		rd_wr = 0;
+		in = 0;
+		
+		for(i = 0; i < 5; i = i + 1)
+		begin
+			#10;
+			address = i;
+		end
+
+		#10
+		rd_wr = 1;
+		
+		for(i = 0; i < 5; i = i + 1)
+		begin
+			#10;
+			address = i;
+			in = i * 2;
+		end
+		
+		#10
+		rd_wr = 0;
+		in = 0;
+		
+		for(i = 0; i < 5; i = i + 1)	
+		begin
+			#10;
+			address = i;
+		end
+		
+		#10 $stop;
+	end
+
+endmodule 

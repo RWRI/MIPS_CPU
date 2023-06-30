@@ -1,0 +1,67 @@
+# Reading D:/Apps/Quartus/Versao18.1/intelFPGA_lite/modelsim_ase/tcl/vsim/pref.tcl
+# do datamemory_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying D:/Apps/Quartus/Versao18.1/intelFPGA_lite/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {datamemory_min_1200mv_-40c_fast.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:22 on Jun 30,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." datamemory_min_1200mv_-40c_fast.vo 
+# -- Compiling module datamemory
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	datamemory
+# End time: 18:15:22 on Jun 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/DataMemory {D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/DataMemory/datamemory_TB.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:15:22 on Jun 30,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/DataMemory" D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/DataMemory/datamemory_TB.v 
+# -- Compiling module datamemory_TB
+# 
+# Top level modules:
+# 	datamemory_TB
+# End time: 18:15:22 on Jun 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  datamemory_TB
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=""+acc"" datamemory_TB 
+# Start time: 18:15:23 on Jun 30,2023
+# Loading work.datamemory_TB
+# Loading work.datamemory
+# Loading work.hard_block
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_clkctrl
+# Loading cycloneiv_ver.cycloneiv_mux41
+# Loading cycloneiv_ver.cycloneiv_ena_reg
+# Loading cycloneiv_ver.cycloneiv_ram_block
+# Loading cycloneiv_ver.cycloneiv_ram_register
+# Loading cycloneiv_ver.cycloneiv_ram_pulse_generator
+# SDF 10.5b Compiler 2016.10 Oct  5 2016
+# 
+# Loading instances from datamemory_min_1200mv_-40c_v_fast.sdo
+# Loading timing data from datamemory_min_1200mv_-40c_v_fast.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /datamemory_TB File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/DataMemory/datamemory_TB.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/DataMemory/datamemory_TB.v(54)
+#    Time: 18720 ns  Iteration: 0  Instance: /datamemory_TB
+# Break in Module datamemory_TB at D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/DataMemory/datamemory_TB.v line 54
+# End time: 18:26:54 on Jun 30,2023, Elapsed time: 0:11:31
+# Errors: 0, Warnings: 0

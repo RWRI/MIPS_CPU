@@ -1,0 +1,26 @@
+module datamemory(Clk,rd_wr,address,in,out);
+	
+	input Clk;
+	input rd_wr; //Read em 0, Write em 1
+	input [9:0] address;
+	input [31:0] in;
+	output reg [31:0] out;
+	
+	reg [31:0] memoria [0:1023];
+	
+	always @(posedge Clk) begin
+		if (rd_wr)
+			memoria[address-9'h100] <= in;
+		
+		out <= memoria[address-9'h100];
+	end
+	
+	initial begin
+		memoria[0]=32'd2001; // A
+		memoria[1]=32'd4001; // B
+		memoria[2]=32'd5001; // C
+		memoria[3]=32'd3001; // D
+	end
+
+endmodule 
+
