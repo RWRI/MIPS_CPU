@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pc
-Fri Jun 23 19:08:51 2023
+Fri Jun 30 16:49:02 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,9 +14,10 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Inverted Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +43,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 23 19:08:51 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 30 16:49:02 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; pc                                          ;
 ; Top-level Entity Name              ; pc                                          ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 10                                          ;
-;     Total combinational functions  ; 10                                          ;
-;     Dedicated logic registers      ; 10                                          ;
-; Total registers                    ; 10                                          ;
-; Total pins                         ; 12                                          ;
+; Total logic elements               ; 32                                          ;
+;     Total combinational functions  ; 32                                          ;
+;     Dedicated logic registers      ; 32                                          ;
+; Total registers                    ; 32                                          ;
+; Total pins                         ; 34                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -180,14 +181,14 @@ refer to the applicable agreement for further details.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 12               ;
+; I/O pins                 ; 34               ;
 ;                          ;                  ;
 ; DSP block 9-bit elements ; 0                ;
 ;                          ;                  ;
 ; Maximum fan-out node     ; Clk~input        ;
-; Maximum fan-out          ; 10               ;
-; Total fan-out            ; 71               ;
-; Average fan-out          ; 1.61             ;
+; Maximum fan-out          ; 32               ;
+; Total fan-out            ; 225              ;
+; Average fan-out          ; 1.70             ;
 +--------------------------+------------------+
 
 
@@ -196,7 +197,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
-; |pc                        ; 10 (10)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 12   ; 0            ; |pc                 ; pc          ; work         ;
+; |pc                        ; 32 (32)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 34   ; 0            ; |pc                 ; pc          ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -206,14 +207,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 10    ;
+; Total registers                              ; 32    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 10    ;
+; Number of registers using Asynchronous Clear ; 32    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; rpc[8]                                 ; 2       ;
+; rpc[10]                                ; 2       ;
+; Total number of inverted registers = 2 ;         ;
++----------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -221,18 +233,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 12                          ;
-; cycloneiii_ff         ; 10                          ;
-;     CLR               ; 10                          ;
-; cycloneiii_lcell_comb ; 10                          ;
-;     arith             ; 8                           ;
-;         2 data inputs ; 7                           ;
+; boundary_port         ; 34                          ;
+; cycloneiii_ff         ; 32                          ;
+;     CLR               ; 32                          ;
+; cycloneiii_lcell_comb ; 34                          ;
+;     arith             ; 30                          ;
+;         2 data inputs ; 29                          ;
 ;         3 data inputs ; 1                           ;
-;     normal            ; 2                           ;
-;         1 data inputs ; 2                           ;
+;     normal            ; 4                           ;
+;         1 data inputs ; 4                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.80                        ;
-; Average LUT depth     ; 1.41                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.88                        ;
 +-----------------------+-----------------------------+
 
 
@@ -251,7 +263,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Jun 23 19:08:36 2023
+    Info: Processing started: Fri Jun 30 16:48:49 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pc -c pc
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -263,14 +275,14 @@ Info (12127): Elaborating entity "pc" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 10 logic cells
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 32 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Fri Jun 23 19:08:51 2023
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 4837 megabytes
+    Info: Processing ended: Fri Jun 30 16:49:02 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:14
 
 

@@ -5,7 +5,7 @@ module registerfile (
 	input [4:0] rs, rt, rd
 );
 
-	reg [31:0] registros [31:0];
+	(*keep=1*) reg [31:0] registros [31:0];
 	integer i;
 	
 	assign a = registros[rs];

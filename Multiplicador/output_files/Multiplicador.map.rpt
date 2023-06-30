@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Multiplicador
-Wed Jun 28 10:11:30 2023
+Fri Jun 30 16:21:06 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -17,11 +17,12 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   9. Registers Removed During Synthesis
  10. General Register Statistics
  11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: CONTROL:clt
- 13. Port Connectivity Checks: "ACC:acc"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 12. Source assignments for Top-level Entity: |Multiplicador
+ 13. Parameter Settings for User Entity Instance: CONTROL:clt
+ 14. Port Connectivity Checks: "ACC:acc"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -47,13 +48,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 28 10:11:30 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 30 16:21:06 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Multiplicador                               ;
 ; Top-level Entity Name              ; Multiplicador                               ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 102                                         ;
-;     Total combinational functions  ; 101                                         ;
+; Total logic elements               ; 152                                         ;
+;     Total combinational functions  ; 151                                         ;
 ;     Dedicated logic registers      ; 70                                          ;
 ; Total registers                    ; 70                                          ;
 ; Total pins                         ; 69                                          ;
@@ -195,8 +196,8 @@ refer to the applicable agreement for further details.
 ;                          ;                  ;
 ; Maximum fan-out node     ; Clk~input        ;
 ; Maximum fan-out          ; 70               ;
-; Total fan-out            ; 602              ;
-; Average fan-out          ; 1.95             ;
+; Total fan-out            ; 650              ;
+; Average fan-out          ; 1.81             ;
 +--------------------------+------------------+
 
 
@@ -205,10 +206,10 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name          ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------+-------------+--------------+
-; |Multiplicador             ; 101 (0)             ; 70 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 69   ; 0            ; |Multiplicador               ;             ;              ;
-;    |ACC:acc|               ; 34 (34)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Multiplicador|ACC:acc       ; ACC         ; work         ;
-;    |Adder:add|             ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Multiplicador|Adder:add     ; Adder       ; work         ;
-;    |CONTROL:clt|           ; 5 (5)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Multiplicador|CONTROL:clt   ; CONTROL     ; work         ;
+; |Multiplicador             ; 151 (53)            ; 70 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0         ; 69   ; 0            ; |Multiplicador               ;             ;              ;
+;    |ACC:acc|               ; 35 (35)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Multiplicador|ACC:acc       ; ACC         ; work         ;
+;    |Adder:add|             ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Multiplicador|Adder:add     ; Adder       ; work         ;
+;    |CONTROL:clt|           ; 3 (3)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Multiplicador|CONTROL:clt   ; CONTROL     ; work         ;
 ;    |Counter:count|         ; 43 (43)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Multiplicador|Counter:count ; Counter     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -245,7 +246,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Total registers                              ; 70    ;
 ; Number of registers using Synchronous Clear  ; 32    ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 32    ;
@@ -258,9 +259,123 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Multiplicador|ACC:acc|Saidas[7]  ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |Multiplicador|ACC:acc|Saidas[17] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Multiplicador|ACC:acc|Saidas[13] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |Multiplicador|ACC:acc|Saidas[20] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
+
+
++---------------------------------------------------------+
+; Source assignments for Top-level Entity: |Multiplicador ;
++------------------------------+-------+------+-----------+
+; Assignment                   ; Value ; From ; To        ;
++------------------------------+-------+------+-----------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[16]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[16]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[15]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[15]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[14]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[14]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[13]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[13]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[12]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[12]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[11]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[11]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[10]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[10]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[9]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[9]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[8]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[8]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[7]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[7]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[6]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[6]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[5]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[5]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[4]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[4]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[3]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[3]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[2]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[2]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[1]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[1]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; ws[0]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; ws[0]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[31]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[31]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[30]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[30]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[29]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[29]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[28]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[28]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[27]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[27]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[26]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[26]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[25]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[25]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[24]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[24]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[23]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[23]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[22]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[22]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[21]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[21]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[20]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[20]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[19]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[19]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[18]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[18]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[17]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[17]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[16]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[16]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[15]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[15]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[14]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[14]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[13]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[13]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[12]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[12]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[11]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[11]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[10]    ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[10]    ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[9]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[9]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[8]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[8]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[7]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[7]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[6]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[6]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[5]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[5]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[4]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[4]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[3]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[3]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[2]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[2]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[1]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[1]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wp[0]     ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wp[0]     ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wl        ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wl        ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wsh       ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wsh       ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wad       ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wad       ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wk        ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wk        ;
++------------------------------+-------+------+-----------+
 
 
 +----------------------------------------------------------+
@@ -295,20 +410,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR               ; 4                           ;
 ;     ENA               ; 32                          ;
 ;     SCLR              ; 32                          ;
-;     plain             ; 2                           ;
-; cycloneiii_lcell_comb ; 102                         ;
+;     SLD               ; 1                           ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 152                         ;
 ;     arith             ; 47                          ;
 ;         2 data inputs ; 31                          ;
 ;         3 data inputs ; 16                          ;
-;     normal            ; 55                          ;
+;     normal            ; 105                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
+;         1 data inputs ; 53                          ;
 ;         2 data inputs ; 5                           ;
-;         3 data inputs ; 18                          ;
-;         4 data inputs ; 29                          ;
+;         3 data inputs ; 19                          ;
+;         4 data inputs ; 27                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 2.57                        ;
+; Max LUT depth         ; 5.50                        ;
+; Average LUT depth     ; 3.25                        ;
 +-----------------------+-----------------------------+
 
 
@@ -317,7 +433,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -327,7 +443,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Jun 28 10:11:14 2023
+    Info: Processing started: Fri Jun 30 16:20:43 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Multiplicador -c Multiplicador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -350,16 +466,68 @@ Info (12128): Elaborating entity "Counter" for hierarchy "Counter:count" File: D
 Info (12128): Elaborating entity "Adder" for hierarchy "Adder:add" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 50
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "wp[0]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[1]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[2]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[3]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[4]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[5]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[6]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[7]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[8]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[9]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[10]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[11]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[12]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[13]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[14]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[15]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[16]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[17]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[18]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[19]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[20]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[21]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[22]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[23]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[24]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[25]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[26]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[27]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[28]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[29]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[30]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wp[31]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 13
+    Info (17048): Logic cell "wk" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 14
+    Info (17048): Logic cell "wsh" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 14
+    Info (17048): Logic cell "ws[0]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[1]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[2]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[3]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[4]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[5]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[6]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[7]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[8]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[9]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[10]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[11]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[12]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[13]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[14]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[15]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
+    Info (17048): Logic cell "ws[16]" File: D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/Multiplicador/Multiplicador.v Line: 12
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 171 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 221 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 35 input pins
     Info (21059): Implemented 34 output pins
-    Info (21061): Implemented 102 logic cells
+    Info (21061): Implemented 152 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4838 megabytes
-    Info: Processing ended: Wed Jun 28 10:11:30 2023
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 4849 megabytes
+    Info: Processing ended: Fri Jun 30 16:21:06 2023
+    Info: Elapsed time: 00:00:23
+    Info: Total CPU time (on all processors): 00:00:21
 
 

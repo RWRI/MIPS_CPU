@@ -140,7 +140,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "Multiplicador[0]",
+					"name" : "St",
 					"strict" : false
 				},
 				{
@@ -148,7 +148,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "St",
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Multiplicador[0]",
 					"strict" : false
 				},
 				{
@@ -273,10 +277,6 @@
 				},
 				{
 					"name" : "Multiplicando[15]",
-					"strict" : false
-				},
-				{
-					"name" : "Reset",
 					"strict" : false
 				}
 			]

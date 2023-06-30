@@ -3,7 +3,7 @@
 module pc_TB();
 
 	reg Clk, rst;
-	wire [9:0] pc_endereco;
+	wire [31:0] pc_endereco;
 
 	pc DUT(		
 		.pc_endereco(pc_endereco),
@@ -16,7 +16,7 @@ module pc_TB();
 	initial begin
 		Clk = 0;
 		rst = 1;
-		#10
+		#15
 		rst = 0;
 		#2000
 		rst = 1;

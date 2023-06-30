@@ -90,19 +90,19 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : A13       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : A14       :        :                   :         : 8         :                
 GND+                         : A15       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A16       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A17       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A18       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A19       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A20       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A21       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A22       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A23       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A24       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A25       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A26       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A27       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A28       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A29       :        :                   :         : 7         :                
+Multiplicando[11]            : A17       : input  : 2.5 V             :         : 7         : N              
+Multiplicando[9]             : A18       : input  : 2.5 V             :         : 7         : N              
+Multiplicando[13]            : A19       : input  : 2.5 V             :         : 7         : N              
+Produto[19]                  : A20       : output : 2.5 V             :         : 7         : N              
+Produto[16]                  : A21       : output : 2.5 V             :         : 7         : N              
+Produto[30]                  : A22       : output : 2.5 V             :         : 7         : N              
+Produto[18]                  : A23       : output : 2.5 V             :         : 7         : N              
+Produto[20]                  : A24       : output : 2.5 V             :         : 7         : N              
+Multiplicador[15]            : A25       : input  : 2.5 V             :         : 7         : N              
+Multiplicador[14]            : A26       : input  : 2.5 V             :         : 7         : N              
+Multiplicador[12]            : A27       : input  : 2.5 V             :         : 7         : N              
+Multiplicador[8]             : A28       : input  : 2.5 V             :         : 7         : N              
+Produto[6]                   : A29       : output : 2.5 V             :         : 7         : N              
 GXB_GND*                     : AA1       :        :                   :         : QL0       :                
 GXB_GND*                     : AA2       :        :                   :         : QL0       :                
 GND                          : AA3       : gnd    :                   :         :           :                
@@ -124,15 +124,15 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AA18      :        :                   :      
 GND                          : AA19      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA20      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 4         :                
-Produto[28]                  : AA22      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA22      :        :                   :         : 5         :                
 VCCIO5                       : AA23      : power  :                   : 2.5V    : 5         :                
 VCCIO5                       : AA24      : power  :                   : 2.5V    : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA25      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA26      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA27      :        :                   :         : 5         :                
-Multiplicando[13]            : AA28      : input  : 2.5 V             :         : 5         : N              
-Produto[27]                  : AA29      : output : 2.5 V             :         : 5         : N              
-Multiplicando[10]            : AA30      : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA28      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA29      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA30      :        :                   :         : 5         :                
 GND                          : AB1       : gnd    :                   :         :           :                
 GND                          : AB2       : gnd    :                   :         :           :                
 GXB_NC                       : AB3       :        :                   :         : QL0       :                
@@ -159,10 +159,10 @@ VCCD_PLL                     : AB23      : power  :                   : 1.2V    
 VCCA                         : AB24      : power  :                   : 2.5V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB25      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB26      :        :                   :         : 5         :                
-Produto[30]                  : AB27      : output : 2.5 V             :         : 5         : N              
-Produto[26]                  : AB28      : output : 2.5 V             :         : 5         : N              
-Multiplicando[11]            : AB29      : input  : 2.5 V             :         : 5         : N              
-Produto[21]                  : AB30      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB27      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB28      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB29      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB30      :        :                   :         : 5         :                
 GXB_GND*                     : AC1       :        :                   :         : QL0       :                
 GXB_GND*                     : AC2       :        :                   :         : QL0       :                
 GND                          : AC3       : gnd    :                   :         :           :                
@@ -189,10 +189,10 @@ GND                          : AC23      : gnd    :                   :         
 GND                          : AC24      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC25      :        :                   :         : 5         :                
 GND                          : AC26      : gnd    :                   :         :           :                
-Produto[22]                  : AC27      : output : 2.5 V             :         : 5         : N              
-Produto[17]                  : AC28      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC27      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC28      :        :                   :         : 5         :                
 GND                          : AC29      : gnd    :                   :         :           :                
-Produto[18]                  : AC30      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC30      :        :                   :         : 5         :                
 GND                          : AD1       : gnd    :                   :         :           :                
 GND                          : AD2       : gnd    :                   :         :           :                
 VCCA_GXB                     : AD3       : power  :                   : 2.5V    :           :                
@@ -221,8 +221,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AD25      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD26      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD27      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD28      :        :                   :         : 5         :                
-Produto[29]                  : AD29      : output : 2.5 V             :         : 5         : N              
-Produto[19]                  : AD30      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD29      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD30      :        :                   :         : 5         :                
 RREF                         : AE1       :        :                   :         :           :                
 GND                          : AE2       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 3         :                
@@ -418,19 +418,19 @@ GND                          : B14       : gnd    :                   :         
 GND+                         : B15       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B16       :        :                   :         : 7         :                
 GND                          : B17       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B18       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B19       :        :                   :         : 7         :                
+Produto[7]                   : B18       : output : 2.5 V             :         : 7         : N              
+Produto[8]                   : B19       : output : 2.5 V             :         : 7         : N              
 GND                          : B20       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B21       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B22       :        :                   :         : 7         :                
+Produto[17]                  : B21       : output : 2.5 V             :         : 7         : N              
+Produto[27]                  : B22       : output : 2.5 V             :         : 7         : N              
 GND                          : B23       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B24       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B25       :        :                   :         : 7         :                
+Produto[0]                   : B24       : output : 2.5 V             :         : 7         : N              
+Produto[21]                  : B25       : output : 2.5 V             :         : 7         : N              
 GND                          : B26       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B27       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B28       :        :                   :         : 7         :                
+Multiplicador[13]            : B27       : input  : 2.5 V             :         : 7         : N              
+Multiplicador[4]             : B28       : input  : 2.5 V             :         : 7         : N              
 GND                          : B29       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B30       :        :                   :         : 7         :                
+Produto[13]                  : B30       : output : 2.5 V             :         : 7         : N              
 nCE                          : C1        :        :                   :         : 9         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
@@ -448,17 +448,17 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : C14       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : C15       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C16       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C17       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C18       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C19       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C20       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C21       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C22       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C23       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C24       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C25       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C26       :        :                   :         : 7         :                
+Produto[31]                  : C18       : output : 2.5 V             :         : 7         : N              
+Multiplicando[8]             : C19       : input  : 2.5 V             :         : 7         : N              
+Produto[28]                  : C20       : output : 2.5 V             :         : 7         : N              
+Produto[22]                  : C21       : output : 2.5 V             :         : 7         : N              
+Produto[29]                  : C22       : output : 2.5 V             :         : 7         : N              
+Multiplicando[5]             : C23       : input  : 2.5 V             :         : 7         : N              
+Produto[23]                  : C24       : output : 2.5 V             :         : 7         : N              
+Multiplicador[1]             : C25       : input  : 2.5 V             :         : 7         : N              
+Produto[11]                  : C26       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C27       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C28       :        :                   :         : 7         :                
+Produto[14]                  : C28       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C29       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C30       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 8         :                
@@ -478,15 +478,15 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : D14       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : D15       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D16       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D17       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D18       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D19       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D20       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D21       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D22       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D23       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D24       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D25       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D26       :        :                   :         : 7         :                
+Produto[25]                  : D18       : output : 2.5 V             :         : 7         : N              
+Produto[26]                  : D19       : output : 2.5 V             :         : 7         : N              
+Produto[24]                  : D20       : output : 2.5 V             :         : 7         : N              
+Produto[15]                  : D21       : output : 2.5 V             :         : 7         : N              
+Produto[5]                   : D22       : output : 2.5 V             :         : 7         : N              
+Multiplicando[4]             : D23       : input  : 2.5 V             :         : 7         : N              
+Multiplicador[11]            : D24       : input  : 2.5 V             :         : 7         : N              
+Multiplicador[10]            : D25       : input  : 2.5 V             :         : 7         : N              
+Produto[12]                  : D26       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D27       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D28       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D29       :        :                   :         : 6         :                
@@ -508,13 +508,13 @@ GND                          : E14       : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : E15       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E16       :        :                   :         : 8         :                
 GND                          : E17       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E18       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E19       :        :                   :         : 7         :                
+Multiplicando[7]             : E18       : input  : 2.5 V             :         : 7         : N              
+Multiplicando[12]            : E19       : input  : 2.5 V             :         : 7         : N              
 GND                          : E20       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E21       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E22       :        :                   :         : 7         :                
+Done                         : E21       : output : 2.5 V             :         : 7         : N              
+Multiplicador[6]             : E22       : input  : 2.5 V             :         : 7         : N              
 GND                          : E23       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E24       :        :                   :         : 7         :                
+Multiplicador[3]             : E24       : input  : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : E25       :        :                   :         : 7         :                
 GND                          : E26       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E27       :        :                   :         : 6         :                
@@ -537,14 +537,14 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : F13       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : F14       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F15       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F16       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F17       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F18       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F19       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F20       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F21       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F22       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F23       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F24       :        :                   :         : 7         :                
+Multiplicando[2]             : F17       : input  : 2.5 V             :         : 7         : N              
+Multiplicando[15]            : F18       : input  : 2.5 V             :         : 7         : N              
+Idle                         : F19       : output : 2.5 V             :         : 7         : N              
+Multiplicando[0]             : F20       : input  : 2.5 V             :         : 7         : N              
+Multiplicando[6]             : F21       : input  : 2.5 V             :         : 7         : N              
+Multiplicador[2]             : F22       : input  : 2.5 V             :         : 7         : N              
+Produto[10]                  : F23       : output : 2.5 V             :         : 7         : N              
+Produto[4]                   : F24       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F25       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F26       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F27       :        :                   :         : 6         :                
@@ -566,21 +566,21 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : G12       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : G13       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G14       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G15       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G16       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G17       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G18       :        :                   :         : 7         :                
+Multiplicando[10]            : G16       : input  : 2.5 V             :         : 7         : N              
+Multiplicando[3]             : G17       : input  : 2.5 V             :         : 7         : N              
+Multiplicando[1]             : G18       : input  : 2.5 V             :         : 7         : N              
 VCCIO7                       : G19       : power  :                   : 2.5V    : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G20       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G21       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G22       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G23       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G24       :        :                   :         : 7         :                
+Multiplicando[14]            : G20       : input  : 2.5 V             :         : 7         : N              
+Multiplicador[7]             : G21       : input  : 2.5 V             :         : 7         : N              
+Produto[9]                   : G22       : output : 2.5 V             :         : 7         : N              
+Produto[2]                   : G23       : output : 2.5 V             :         : 7         : N              
+Multiplicador[5]             : G24       : input  : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : G25       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G26       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G27       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G28       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G29       :        :                   :         : 6         :                
-Produto[1]                   : G30       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G30       :        :                   :         : 6         :                
 GND                          : H1        : gnd    :                   :         :           :                
 GND                          : H2        : gnd    :                   :         :           :                
 GXB_NC                       : H3        :        :                   :         : QL1       :                
@@ -604,7 +604,7 @@ GND                          : H20       : gnd    :                   :         
 VCCIO7                       : H21       : power  :                   : 2.5V    : 7         :                
 VCCIO7                       : H22       : power  :                   : 2.5V    : 7         :                
 GND                          : H23       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H24       :        :                   :         : 7         :                
+Multiplicador[9]             : H24       : input  : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H25       :        :                   :         : 6         :                
 GND                          : H26       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H27       :        :                   :         : 6         :                
@@ -661,8 +661,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : K17       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : K18       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K19       :        :                   :         : 7         :                
 GND                          : K20       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K21       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K22       :        :                   :         : 7         :                
+Produto[3]                   : K21       : output : 2.5 V             :         : 7         : N              
+Produto[1]                   : K22       : output : 2.5 V             :         : 7         : N              
 VCCA                         : K23       : power  :                   : 2.5V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K24       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K25       :        :                   :         : 6         :                
@@ -670,7 +670,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : K26       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : K27       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K28       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K29       :        :                   :         : 6         :                
-Produto[8]                   : K30       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K30       :        :                   :         : 6         :                
 GXB_GND*                     : L1        :        :                   :         : QL1       :                
 GXB_GND*                     : L2        :        :                   :         : QL1       :                
 GND                          : L3        : gnd    :                   :         :           :                
@@ -700,7 +700,7 @@ GND                          : L26       : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : L27       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L28       :        :                   :         : 6         :                
 GND                          : L29       : gnd    :                   :         :           :                
-Produto[3]                   : L30       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L30       :        :                   :         : 6         :                
 GND                          : M1        : gnd    :                   :         :           :                
 GND                          : M2        : gnd    :                   :         :           :                
 GXB_NC                       : M3        :        :                   :         : QL1       :                
@@ -725,12 +725,12 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : M21       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : M22       :        :                   :         : 6         :                
 VCCIO6                       : M23       : power  :                   : 2.5V    : 6         :                
 VCCIO6                       : M24       : power  :                   : 2.5V    : 6         :                
-Produto[2]                   : M25       : output : 2.5 V             :         : 6         : N              
-Produto[5]                   : M26       : output : 2.5 V             :         : 6         : N              
-Produto[9]                   : M27       : output : 2.5 V             :         : 6         : N              
-Produto[4]                   : M28       : output : 2.5 V             :         : 6         : N              
-Produto[12]                  : M29       : output : 2.5 V             :         : 6         : N              
-Multiplicador[1]             : M30       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M28       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M29       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M30       :        :                   :         : 6         :                
 GXB_GND*                     : N1        :        :                   :         : QL1       :                
 GXB_GND*                     : N2        :        :                   :         : QL1       :                
 GND                          : N3        : gnd    :                   :         :           :                
@@ -754,13 +754,13 @@ VCCINT                       : N20       : power  :                   : 1.2V    
 RESERVED_INPUT_WITH_WEAK_PULLUP : N21       :        :                   :         : 6         :                
 VCCIO6                       : N22       : power  :                   : 2.5V    : 6         :                
 VCCIO6                       : N23       : power  :                   : 2.5V    : 6         :                
-Produto[15]                  : N24       : output : 2.5 V             :         : 6         : N              
-Produto[6]                   : N25       : output : 2.5 V             :         : 6         : N              
-Produto[10]                  : N26       : output : 2.5 V             :         : 6         : N              
-Produto[13]                  : N27       : output : 2.5 V             :         : 6         : N              
-Produto[7]                   : N28       : output : 2.5 V             :         : 6         : N              
-Multiplicador[9]             : N29       : input  : 2.5 V             :         : 6         : N              
-Multiplicador[15]            : N30       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N28       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N29       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N30       :        :                   :         : 6         :                
 GND                          : P1        : gnd    :                   :         :           :                
 GND                          : P2        : gnd    :                   :         :           :                
 GXB_NC                       : P3        :        :                   :         : QL1       :                
@@ -785,12 +785,12 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : P21       :        :                   :      
 VCCIO6                       : P22       : power  :                   : 2.5V    : 6         :                
 GND                          : P23       : gnd    :                   :         :           :                
 VCCIO6                       : P24       : power  :                   : 2.5V    : 6         :                
-Produto[14]                  : P25       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P25       :        :                   :         : 6         :                
 GND                          : P26       : gnd    :                   :         :           :                
-Multiplicador[12]            : P27       : input  : 2.5 V             :         : 6         : N              
-Multiplicador[2]             : P28       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P28       :        :                   :         : 6         :                
 GND                          : P29       : gnd    :                   :         :           :                
-Multiplicador[14]            : P30       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P30       :        :                   :         : 6         :                
 GXB_GND*                     : R1        :        :                   :         : QL1       :                
 GXB_GND*                     : R2        :        :                   :         : QL1       :                
 GND                          : R3        : gnd    :                   :         :           :                
@@ -814,13 +814,13 @@ VCCINT                       : R20       : power  :                   : 1.2V    
 GND                          : R21       : gnd    :                   :         :           :                
 VCCIO6                       : R22       : power  :                   : 2.5V    : 6         :                
 VCCIO6                       : R23       : power  :                   : 2.5V    : 6         :                
-Produto[11]                  : R24       : output : 2.5 V             :         : 6         : N              
-Multiplicador[8]             : R25       : input  : 2.5 V             :         : 6         : N              
-Multiplicador[5]             : R26       : input  : 2.5 V             :         : 6         : N              
-Multiplicador[3]             : R27       : input  : 2.5 V             :         : 6         : N              
-Multiplicador[7]             : R28       : input  : 2.5 V             :         : 6         : N              
-Multiplicador[4]             : R29       : input  : 2.5 V             :         : 6         : N              
-Multiplicador[13]            : R30       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R28       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R29       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R30       :        :                   :         : 6         :                
 GND                          : T1        : gnd    :                   :         :           :                
 GND                          : T2        : gnd    :                   :         :           :                
 GXB_NC                       : T3        :        :                   :         : QL0       :                
@@ -841,16 +841,16 @@ VCCINT                       : T17       : power  :                   : 1.2V    
 GND                          : T18       : gnd    :                   :         :           :                
 VCCINT                       : T19       : power  :                   : 1.2V    :           :                
 GND                          : T20       : gnd    :                   :         :           :                
-Multiplicando[9]             : T21       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T21       :        :                   :         : 5         :                
 GND                          : T22       : gnd    :                   :         :           :                
-Multiplicando[2]             : T23       : input  : 2.5 V             :         : 5         : N              
-Produto[16]                  : T24       : output : 2.5 V             :         : 5         : N              
-Idle                         : T25       : output : 2.5 V             :         : 5         : N              
-Multiplicador[10]            : T26       : input  : 2.5 V             :         : 5         : N              
-Multiplicador[11]            : T27       : input  : 2.5 V             :         : 5         : N              
-Multiplicador[6]             : T28       : input  : 2.5 V             :         : 6         : N              
-St                           : T29       : input  : 2.5 V             :         : 6         : N              
-Multiplicador[0]             : T30       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T23       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T24       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T25       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T26       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T27       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T28       :        :                   :         : 6         :                
+Multiplicador[0]             : T29       : input  : 2.5 V             :         : 6         : N              
+St                           : T30       : input  : 2.5 V             :         : 6         : N              
 GXB_GND*                     : U1        :        :                   :         : QL0       :                
 GXB_GND*                     : U2        :        :                   :         : QL0       :                
 GND                          : U3        : gnd    :                   :         :           :                
@@ -871,16 +871,16 @@ GND                          : U17       : gnd    :                   :         
 VCCINT                       : U18       : power  :                   : 1.2V    :           :                
 GND                          : U19       : gnd    :                   :         :           :                
 VCCINT                       : U20       : power  :                   : 1.2V    :           :                
-Produto[0]                   : U21       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U21       :        :                   :         : 5         :                
 VCCIO5                       : U22       : power  :                   : 2.5V    : 5         :                
 GND                          : U23       : gnd    :                   :         :           :                
 VCCIO5                       : U24       : power  :                   : 2.5V    : 5         :                
-Multiplicando[3]             : U25       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U25       :        :                   :         : 5         :                
 GND                          : U26       : gnd    :                   :         :           :                
-Multiplicando[0]             : U27       : input  : 2.5 V             :         : 5         : N              
-Multiplicando[7]             : U28       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U27       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U28       :        :                   :         : 5         :                
 GND                          : U29       : gnd    :                   :         :           :                
-Multiplicando[5]             : U30       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U30       :        :                   :         : 5         :                
 GND                          : V1        : gnd    :                   :         :           :                
 GND                          : V2        : gnd    :                   :         :           :                
 GXB_NC                       : V3        :        :                   :         : QL0       :                
@@ -901,14 +901,14 @@ VCCINT                       : V17       : power  :                   : 1.2V    
 GND                          : V18       : gnd    :                   :         :           :                
 VCCINT                       : V19       : power  :                   : 1.2V    :           :                
 GND                          : V20       : gnd    :                   :         :           :                
-Multiplicando[15]            : V21       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V21       :        :                   :         : 5         :                
 VCCIO5                       : V22       : power  :                   : 2.5V    : 5         :                
 VCCIO5                       : V23       : power  :                   : 2.5V    : 5         :                
 GND                          : V24       : gnd    :                   :         :           :                
-Produto[20]                  : V25       : output : 2.5 V             :         : 5         : N              
-Multiplicando[14]            : V26       : input  : 2.5 V             :         : 5         : N              
-Multiplicando[4]             : V27       : input  : 2.5 V             :         : 5         : N              
-Multiplicando[1]             : V28       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V25       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V26       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V27       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V28       :        :                   :         : 5         :                
 GND+                         : V29       :        :                   :         : 5         :                
 GND+                         : V30       :        :                   :         : 5         :                
 GXB_GND*                     : W1        :        :                   :         : QL0       :                
@@ -935,12 +935,12 @@ GND                          : W21       : gnd    :                   :         
 VCCIO5                       : W22       : power  :                   : 2.5V    : 5         :                
 VCCIO5                       : W23       : power  :                   : 2.5V    : 5         :                
 VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
-Multiplicando[12]            : W25       : input  : 2.5 V             :         : 5         : N              
-Produto[24]                  : W26       : output : 2.5 V             :         : 5         : N              
-Done                         : W27       : output : 2.5 V             :         : 5         : N              
-Multiplicando[8]             : W28       : input  : 2.5 V             :         : 5         : N              
-Produto[31]                  : W29       : output : 2.5 V             :         : 5         : N              
-Multiplicando[6]             : W30       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W25       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W26       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W27       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W28       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W29       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W30       :        :                   :         : 5         :                
 GND                          : Y1        : gnd    :                   :         :           :                
 GND                          : Y2        : gnd    :                   :         :           :                
 GXB_NC                       : Y3        :        :                   :         : QL0       :                
@@ -968,6 +968,6 @@ VCCIO5                       : Y24       : power  :                   : 2.5V    
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y25       :        :                   :         : 5         :                
 GND                          : Y26       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y27       :        :                   :         : 5         :                
-Produto[25]                  : Y28       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y28       :        :                   :         : 5         :                
 GND                          : Y29       : gnd    :                   :         :           :                
-Produto[23]                  : Y30       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y30       :        :                   :         : 5         :                
