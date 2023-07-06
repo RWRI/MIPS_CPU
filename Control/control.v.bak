@@ -1,0 +1,128 @@
+module control(in, out);
+	input [31:0] in;
+	output [22:0] out;
+	
+	reg [5:0] code_op, op;
+	reg [4:0] rs,rt;
+	
+	reg [1:0] sel_ALU;
+	reg mul_st;
+	reg alu1_mux;
+	reg alu2_mux;
+	reg mem_wr;
+	reg mux_sel_wb;
+	reg [4:0] rd;
+	reg rf_wr;
+	
+	assign out = {rs, rt, rd, rf_wr, alu1_mux, sel_ALU, mul_st,  alu2_mux, mem_wr, mux_sel_wb};
+
+
+/*			
+   Instruções
+		OPCODE	Rs			Rt			Offset
+	LW 001010	XXXXX		XXXXX		XXXXXXXXXXXXXXXX
+	SW	001101	XXXXX		XXXXX		XXXXXXXXXXXXXXXX
+		OPCODE	Rs       Rt			Rd			Operacao       
+  ADD	001001	XXXXX		XXXXX		XXXXX		01010	100000
+  SUB 001001	XXXXX		XXXXX		XXXXX		01010	100010
+  MUL 001001	XXXXX		XXXXX		XXXXX		01010	110010
+  AND	001001	XXXXX		XXXXX		XXXXX		01010	100100
+   OR 001001	XXXXX		XXXXX		XXXXX		01010	100101
+*/
+	always @ (in) 
+	begin
+		code_op = in[31:26];
+		op = in[5:0];
+		rs = in[25:21];
+		rt = in[20:16];
+		case(code_op)
+			5'd10: 					//LW
+			begin
+				sel_ALU = 2'b00;   
+				rd = rt;           	// rt é o destino
+				rf_wr = 1;				// Escreve no RegisterFile 
+				mem_wr = 0;   		 	// le da memoria     				
+				alu1_mux = 1;		 	// usa extend como entrada
+				alu2_mux = 1;		 	// usa a saida da ALU
+				mul_st = 0; 		 	// nao multiplica
+				mux_sel_wb = 1;	 	// seleciona M p writeback
+			end
+			
+			5'd11: 				 	//SW
+			begin
+				sel_ALU = 2'b00;		
+				rd = rt;       		// rt é o destino
+				rf_wr = 0;				// nao escreve no RegisterFile
+				mem_wr = 1;				// Escreve na mememoria
+				alu1_mux = 1;			// extend como entrada
+				alu2_mux = 1;			// usa saida da alu
+				mul_st = 0;				// nao multiplica
+				mux_sel_wb = 1; 		// seleciona M para writeback
+			end
+			
+			5'd9: 					//Op aritmetica
+			begin  
+				rd = in[15:11]; 		// Pega o destino da instrucao
+				rf_wr = 1; 				// Escreve no register file
+				alu1_mux = 0;       	// Usa B como entrada
+				mul_st = 0;				// O multiplicador começa desabilitado
+				mux_sel_wb = 0;		// Seleciona D para writeback
+				mem_wr = 0;				// Nao escreve na mememoria
+				
+				case(op)
+					6'd32:  			// add
+					begin 
+						sel_ALU = 2'b00;	
+						alu2_mux = 1;   	
+					end
+					
+					6'd34: 			// sub
+					begin
+						sel_ALU = 2'b01;	
+						alu2_mux = 1;		
+					end
+					
+					6'd50: 			
+					begin
+						sel_ALU = 2'b0;
+						mul_st = 1;			// multiplicador ativado
+						alu2_mux = 0;  	
+					end
+					
+					6'd36: 			//and
+					begin
+						sel_ALU = 2'b10;	
+						alu2_mux = 1; 		
+					end
+					
+					6'd37: 			//or
+					begin
+						sel_ALU = 2'b11;	
+						alu2_mux = 1; 		
+					end
+					
+					default:
+					begin
+						sel_ALU = 2'b0;
+						alu2_mux = 1;
+					end
+					
+				endcase
+			end
+			
+			default: 
+			begin
+				rd = 5'b0;
+				rf_wr = 0;
+				alu1_mux = 0;
+				sel_ALU = 0;
+				mul_st = 0;
+				alu2_mux = 1;
+				mem_wr = 0;
+				mux_sel_wb = 0;				
+			end
+			
+		endcase
+	end
+
+endmodule 

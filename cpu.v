@@ -1,0 +1,280 @@
+/* 
+	Grupo 9
+	Cesar Augusto Santos Ferreira - 2017012332
+	Rafael Rocha Maciel - 2018005619
+	Renato Masteguim Neto - 2020001250
+			
+		a) Qual a latência do sistema?
+			Resposta: 
+			5 pulsos de clock
+			
+		b) Qual o throughput do sistema?
+			Resposta: 
+			O throughput é de 1 instrução por clock quando o pipeline estiver cheio.
+			
+		c) Qual a máxima frequência operacional entregue pelo Time Quest Timing Analizer para o multiplicador e para o sistema? (Indique a FPGA utilizada)
+			Resposta: 
+			FPGA => Cyclone IV GX: EP4CGX150DF31I7
+			Foi analisado o Timing Analyzer (Slow 1200mV 100C Model)
+			Para o Multiplicador foi de 302.57MHz
+			Para o Sistema foi 65.92MHz
+			
+		d) Qual a máxima frequência de operação do sistema? (Indique a FPGA utilizada)
+			Resposta: 
+			FPGA => Cyclone IV GX: EP4CGX150DF31I7
+			Como a multiplicação leva 34 pulsos de clock para ser realizada, a frequência do sistema tem que ser 34 vezes menor 
+			do que a do multiplicador. Desse modo as frequências ficaram as seguintes:
+			Para o Multiplicador foi de 300MHz
+			Para o Sistema foi 8.824MHz
+			
+		e) Com a arquitetura implementada, a expressão (A*B) – (C+D) é executada corretamente (se executada em sequência ininterrupta)? Por quê? 
+			O que pode ser feito para que a expressão seja calculada corretamente?
+			Resposta: 
+			Não, visto que acontece "pipeline hazard", onde o resultado de uma instrução ainda não está no registrador de destino 
+			e a instrução seguinte tenta acessá-la. Uma maneira de resolver esse problema é inserir 3 bolhas na pipeline depois das instruções de load.
+			
+		f) Analisando a sua implementação de dois domínios de clock diferentes, haverá problemas com metaestabilidade? Por que?
+			Resposta: 
+			Não, visto que o clock do sistema é um multiplo inteiro do clock do multiplicador e a PLL mantém a fase sincronizada.
+		
+		g) A aplicação de um multiplicador do tipo utilizado, no sistema MIPS sugerido, é eficiente em termos de velocidade? Por que?
+			Resposta: 
+			Não, visto que essa implementação de multiplicador utilizada possui pipeline enrolada, 
+			desse modo não tendo paralelismo e demorando vários ciclos (34 neste caso) para realizar a sua execução.
+		
+		h) Cite modificações cabíveis na arquitetura do sistema que tornaria o sistema mais rápido (frequência deoperação maior). 
+			Resposta: 
+			Para cada modificação sugerida, qual a nova latência e throughput do sistema?
+			Substituir a implementação do multiplicador por um mais condizente com essa implementação do MIPS. por exemplo, 
+			o próprio multiplicador da FPGA. Desse modo, o sistema poderia operar em uma frequência maior, 
+			e precisaria de apenas um Clock para todo o sistema. A latência e o throughput seriam mantidos.
+
+	*/
+
+module cpu(
+	output CS, WR_RD,
+	input CLK, rst,
+	input [31:0] Data_BUS_READ,
+	output [31:0] ADDR, Data_BUS_WRITE,
+);
+
+	
+	
+	(*keep=1*)wire [31:0] out_inst_mem;
+	(*keep=1*)wire [9:0] out_PC;
+	(*keep=1*)wire CLK_MUL, CLK_SYS;
+	(*keep=1*)wire [22:0] ctrl0, ctrl1, ctrl2, ctrl3;
+	(*keep=1*)wire [31:0] regFile1, regFile2;
+	(*keep=1*)wire [31:0] writeBack;	
+	(*keep=1*)wire [31:0] regA,regB;	
+	(*keep=1*)wire [31:0] ex_out;
+	(*keep=1*)wire [31:0] reg_imm_out;	
+	(*keep=1*)wire [31:0] mux1_out;	
+	(*keep=1*)wire [31:0] out_ALU;	 
+	(*keep=1*)wire [31:0] out_MULT;	
+	(*keep=1*)wire [31:0] mux2_out;		
+ 	(*keep=1*)wire [31:0] reg_d1_out;		 
+	(*keep=1*)wire [31:0] dout;	
+	(*keep=1*)wire [31:0] M;
+	(*keep=1*)wire [31:0] reg_d2_out;
+	(*keep=1*)wire atraso_out;
+	
+	
+	pll1 pll1(.areset(rst),.inclk0(CLK),.c0(CLK_MUL),.c1(CLK_SYS));
+	
+	assign ADDR = reg_d1_out;
+	assign WR_RD = ctrl2[1];
+	
+//1º Estágio
+	
+	// Memória de programa
+	instructionmemory inst_mem(
+		.Clk(CLK_SYS),
+		.address(out_PC),
+		.out(out_inst_mem)
+	);
+	
+	// Contador de programa
+	pc program_counter(
+		.rst(rst),
+		.Clk(CLK_SYS),
+		.pc_address(out_PC)
+	);
+
+	
+	
+// 2º Estágio
+	
+	// Unidade de controle
+	control CONTROL(
+		.in(out_inst_mem),
+		.out(ctrl0)
+	);
+	 
+	// Register File
+	registerfile RF(
+		.Clk(CLK_SYS),
+		.rst(rst),
+		.write(ctrl3[7]),
+		.entrada(writeBack),
+		.rs(ctrl0[22:18]),
+		.rd(ctrl3[12:8]),
+		.rt(ctrl0[17:13]),
+		.a(regFile1),
+		.b(regFile2)
+	);
+	
+	// Extend
+	extend EX(
+		.in(out_inst_mem),
+		.out(ex_out)
+	);
+
+// Registros ID/EX
+	Register A(
+		.rst(rst),
+		.Clk(CLK_SYS),
+		.in(regFile1),
+		.out(regA)
+	);
+	 
+	Register B(
+		.rst(rst),
+		.Clk(CLK_SYS),
+		.in(regFile2),
+		.out(regB)
+   );
+
+	Register #(23) CTRL1 (
+		.rst(rst),
+		.Clk(CLK_SYS),
+		.in(ctrl0[22:0]),
+		.out(ctrl1[22:0])
+	);
+
+	Register IMM(
+		.rst(rst),
+		.Clk(CLK_SYS),
+		.in(ex_out),
+		.out(reg_imm_out)
+	);
+	 
+	 
+	 
+// 3º Estágio
+	
+	// Mux antes da ALU
+	mux MUX1(
+		.data1(regB),
+		.data2(reg_imm_out),
+		.sel(ctrl1[6]),
+		.out(mux1_out)
+	);
+	  
+	// ALU
+	alu ALU(
+		.a(regA),
+		.b(mux1_out),
+		.sel(ctrl1[5:4]),
+		.out(out_ALU)
+	);
+	  
+	// Multiplicador
+	Multiplicador MULT(
+		.Clk(CLK_MUL),
+		.Multiplicador(regA[15:0]),
+		.Multiplicando(regB[15:0]),
+		.St(ctrl1[3]),
+		.Produto(out_MULT)
+	);
+
+	// Mux depois da ALU
+	mux MUX2(
+		.data1(out_MULT),
+		.data2(out_ALU),
+		.sel(ctrl1[2]),
+		.out(mux2_out)
+	);
+	
+	
+// Registros EX/MEM
+	Register D1(
+		.rst(rst),
+		.Clk(CLK_SYS),
+		.in(mux2_out),
+		.out(reg_d1_out)
+	);
+ 
+	Register B2(
+		.rst(rst),
+		.Clk(CLK_SYS),
+		.in(regB),
+		.out(Data_BUS_WRITE)
+	);
+	
+
+	Register #(23) CTRL2(
+		.rst(rst),
+		.Clk(CLK_SYS),
+		.in(ctrl1[22:0]),
+		.out(ctrl2[22:0])
+	);	 
+
+	
+// 4º Estágio
+	 
+	// Decodificador de endereços
+	ADDRDecoding ADD (
+		.address(reg_d1_out),
+		.cs(CS)
+	);
+
+	// Memória de Dados
+	datamemory MEM_DADOS (
+		.Clk(CLK_SYS),
+		.rd_wr(ctrl2[1]),
+		.address(reg_d1_out[9:0]),
+		.in(Data_BUS_WRITE),
+		.out(dout)
+	);
+	
+	Register #(1)ATRASO (
+		.rst(rst), 
+		.Clk(CLK_SYS), 
+		.in(CS), 
+		.out(atraso_out)
+	);
+	
+	// Mux depois da memória
+	mux MUX3(
+		.data1(dout),
+		.data2(Data_BUS_READ),
+		.sel(~atraso_out),
+		.out(M)
+	);
+	
+// Registros MEM/WB
+	Register D2(
+		.rst(rst),
+		.Clk(CLK_SYS),
+		.in(reg_d1_out),
+		.out(reg_d2_out)
+	);
+
+	Register #(23) CTRL3(
+		.rst(rst),
+		.Clk(CLK_SYS),
+		.in(ctrl2[22:0]),
+		.out(ctrl3[22:0])
+	);
+
+// 5º estágio 
+	mux MUX4(
+		.data1(reg_d2_out),
+		.data2(M),
+		.sel(ctrl3[0]),
+		.out(writeBack)
+	);
+	
+	
+ endmodule 

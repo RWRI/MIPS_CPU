@@ -1,0 +1,77 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/InstructionMemory/simulation/modelsim
+vhard_block
+Z1 !s110 1688662515
+!i10b 1
+!s100 ?C2[n?ZmMi1=H1gcKA@8a2
+I223hlM4@HN35>AU=meQhd0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1688660257
+Z4 8instructionmemory_min_1200mv_-40c_fast.vo
+Z5 Finstructionmemory_min_1200mv_-40c_fast.vo
+L0 1052
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1688662515.000000
+Z8 !s107 instructionmemory_min_1200mv_-40c_fast.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|instructionmemory_min_1200mv_-40c_fast.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vinstructionmemory
+R1
+!i10b 1
+!s100 =BIaI3GQAD;97Ndg1KN?71
+I`edTXF:6JjTPBkda4Sz4J1
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vinstructionmemory_TB
+R1
+!i10b 1
+!s100 m@?`[R9i^Jzm`X3m^W^V>2
+I0L??M22MQhA4_eYgLM[0A3
+R2
+R0
+w1688662504
+8D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/InstructionMemory/instructionmemory_TB.v
+FD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/InstructionMemory/instructionmemory_TB.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/InstructionMemory/instructionmemory_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/InstructionMemory|D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/InstructionMemory/instructionmemory_TB.v|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/InstructionMemory
+R12
+ninstructionmemory_@t@b
