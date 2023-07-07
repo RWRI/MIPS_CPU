@@ -102,14 +102,17 @@ module control(
 			
 			default: 
 			begin
-				rd = 0; 			//pega o primeiro registro
-				rf_wr = 0; 		//nao escreve no register file
-				alu1_mux = 0;	//pega valor do B
-				sel_ALU = 0;	//faz uma soma
-				mul_st = 0;		//não habilita multiplicador
-				alu2_mux = 1;	//pega o resultado da alu
-				mem_wr = 0;		//leitura da memória
-				mux_sel_wb = 0;//seleciona o D				
+				//faz and do registo com ele proprio
+				rs = 31;				//pega o ultimo registro
+				rt = 31;				//pega o ultimo registro
+				rd = 31; 			//guarda no ultimo registro	
+				rf_wr = 0; 			//nao escreve no register file
+				alu1_mux = 0;		//pega valor do B
+				sel_ALU = 2'b10;	//faz and na alu
+				mul_st = 0;			//não habilita multiplicador
+				alu2_mux = 1;		//pega o resultado da alu
+				mem_wr = 0;			//leitura da memória
+				mux_sel_wb = 0;	//seleciona o D				
 			end
 			
 		endcase
