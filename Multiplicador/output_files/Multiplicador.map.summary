@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Fri Jun 30 16:21:06 2023
+Analysis & Synthesis Status : Successful - Mon Jul 10 09:43:24 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Multiplicador
 Top-level Entity Name : Multiplicador
 Family : Cyclone IV GX
-Total logic elements : 152
-    Total combinational functions : 151
+Total logic elements : 102
+    Total combinational functions : 101
     Dedicated logic registers : 70
 Total registers : 70
 Total pins : 69

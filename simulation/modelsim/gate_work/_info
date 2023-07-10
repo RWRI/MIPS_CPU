@@ -9,47 +9,47 @@ z2
 cModel Technology
 Z0 dD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/simulation/modelsim
 vcpu
-!s110 1688699423
+Z1 !s110 1688999000
 !i10b 1
-!s100 dUb:3L<R3>C]N:YLBnYeL3
-Iz1Zd_`:<g75l9F]hAzXTo2
-Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s100 ]JVL>f]75f1_BB2e6@Pz01
+I12gF5jc:X^Ez^:;kBm;VP1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1688699357
+w1688998918
 8cpu_min_1200mv_-40c_fast.vo
 Fcpu_min_1200mv_-40c_fast.vo
 L0 31
-Z2 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z3 !s108 1688699423.000000
+Z4 !s108 1688999000.000000
 !s107 cpu_min_1200mv_-40c_fast.vo|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|cpu_min_1200mv_-40c_fast.vo|
 !i113 1
-Z4 o-vlog01compat -work work
+Z5 o-vlog01compat -work work
 !s92 -vlog01compat -work work +incdir+.
-Z5 tCvgOpt 0
+Z6 tCvgOpt 0
 vTB
-!s110 1688699424
-!i10b 1
-!s100 H9?FBj9EZm7C==b_hNZNM1
-Ike3H?oj<f?AjeP5z>[AO02
 R1
+!i10b 1
+!s100 oXd60980Q]McdBJTA_[`n1
+Ih;a[`K12[j^h:i>Dzo7le2
+R2
 R0
-w1688697332
+w1688998817
 8D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/TB.v
 FD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/TB.v
 L0 3
-R2
+R3
 r1
 !s85 0
 31
-R3
+R4
 !s107 D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/TB.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU|D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/TB.v|
 !i113 1
-R4
-!s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU
 R5
+!s92 -vlog01compat -work work +incdir+D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU
+R6
 n@t@b

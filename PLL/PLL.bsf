@@ -21,7 +21,7 @@ refer to the applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 0 0 272 168)
-	(text "pll1" (rect 126 0 149 16)(font "Arial" (font_size 10)))
+	(text "PLL" (rect 125 0 152 16)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 152 25 164)(font "Arial" ))
 	(port
 		(pt 0 64)
@@ -57,7 +57,7 @@ refer to the applicable agreement for further details.
 	)
 	(drawing
 		(text "Cyclone IV GX" (rect 187 152 435 315)(font "Arial" ))
-		(text "inclk0 frequency: 300.000 MHz" (rect 58 59 244 129)(font "Arial" ))
+		(text "inclk0 frequency: 250.000 MHz" (rect 58 59 244 129)(font "Arial" ))
 		(text "Operation Mode: Normal" (rect 58 72 215 155)(font "Arial" ))
 		(text "Clk " (rect 59 93 132 197)(font "Arial" ))
 		(text "Ratio" (rect 80 93 180 197)(font "Arial" ))

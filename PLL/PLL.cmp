@@ -13,7 +13,7 @@
 --refer to the applicable agreement for further details.
 
 
-component pll1
+component PLL
 	PORT
 	(
 		areset		: IN STD_LOGIC  := '0';

@@ -4,7 +4,7 @@
 // MODULE: altpll 
 
 // ============================================================
-// File Name: pll1.v
+// File Name: PLL.v
 // Megafunction Name(s):
 // 			altpll
 //
@@ -31,7 +31,7 @@
 //Intel and sold by Intel or its authorized distributors.  Please
 //refer to the applicable agreement for further details.
 
-module pll1 (
+module PLL (
 	areset,
 	inclk0,
 	c0,
@@ -76,8 +76,8 @@ endmodule
 // Retrieval info: PRIVATE: DIV_FACTOR1 NUMERIC "34"
 // Retrieval info: PRIVATE: DUTY_CYCLE0 STRING "50.00000000"
 // Retrieval info: PRIVATE: DUTY_CYCLE1 STRING "50.00000000"
-// Retrieval info: PRIVATE: EFF_OUTPUT_FREQ_VALUE0 STRING "300.000000"
-// Retrieval info: PRIVATE: EFF_OUTPUT_FREQ_VALUE1 STRING "8.823529"
+// Retrieval info: PRIVATE: EFF_OUTPUT_FREQ_VALUE0 STRING "250.000000"
+// Retrieval info: PRIVATE: EFF_OUTPUT_FREQ_VALUE1 STRING "7.352941"
 // Retrieval info: PRIVATE: EXPLICIT_SWITCHOVER_COUNTER STRING "0"
 // Retrieval info: PRIVATE: EXT_FEEDBACK_RADIO STRING "0"
 // Retrieval info: PRIVATE: GLOCKED_COUNTER_EDIT_CHANGED STRING "1"
@@ -85,7 +85,7 @@ endmodule
 // Retrieval info: PRIVATE: GLOCKED_MODE_CHECK STRING "0"
 // Retrieval info: PRIVATE: GLOCK_COUNTER_EDIT NUMERIC "1048575"
 // Retrieval info: PRIVATE: HAS_MANUAL_SWITCHOVER STRING "1"
-// Retrieval info: PRIVATE: INCLK0_FREQ_EDIT STRING "300.000"
+// Retrieval info: PRIVATE: INCLK0_FREQ_EDIT STRING "250.000"
 // Retrieval info: PRIVATE: INCLK0_FREQ_UNIT_COMBO STRING "MHz"
 // Retrieval info: PRIVATE: INCLK1_FREQ_EDIT STRING "100.000"
 // Retrieval info: PRIVATE: INCLK1_FREQ_EDIT_CHANGED STRING "1"
@@ -105,7 +105,7 @@ endmodule
 // Retrieval info: PRIVATE: MULT_FACTOR0 NUMERIC "1"
 // Retrieval info: PRIVATE: MULT_FACTOR1 NUMERIC "1"
 // Retrieval info: PRIVATE: NORMAL_MODE_RADIO STRING "1"
-// Retrieval info: PRIVATE: OUTPUT_FREQ0 STRING "300.00000000"
+// Retrieval info: PRIVATE: OUTPUT_FREQ0 STRING "250.00000000"
 // Retrieval info: PRIVATE: OUTPUT_FREQ1 STRING "100.00000000"
 // Retrieval info: PRIVATE: OUTPUT_FREQ_MODE0 STRING "1"
 // Retrieval info: PRIVATE: OUTPUT_FREQ_MODE1 STRING "0"
@@ -128,7 +128,7 @@ endmodule
 // Retrieval info: PRIVATE: PLL_PFDENA_CHECK STRING "0"
 // Retrieval info: PRIVATE: PLL_TARGET_HARCOPY_CHECK NUMERIC "0"
 // Retrieval info: PRIVATE: PRIMARY_CLK_COMBO STRING "inclk0"
-// Retrieval info: PRIVATE: RECONFIG_FILE STRING "pll1.mif"
+// Retrieval info: PRIVATE: RECONFIG_FILE STRING "PLL.mif"
 // Retrieval info: PRIVATE: SACN_INPUTS_CHECK STRING "0"
 // Retrieval info: PRIVATE: SCAN_FEATURE_ENABLED STRING "1"
 // Retrieval info: PRIVATE: SELF_RESET_LOCK_LOSS STRING "0"
@@ -161,7 +161,7 @@ endmodule
 // Retrieval info: CONSTANT: CLK1_MULTIPLY_BY NUMERIC "1"
 // Retrieval info: CONSTANT: CLK1_PHASE_SHIFT STRING "0"
 // Retrieval info: CONSTANT: COMPENSATE_CLOCK STRING "CLK0"
-// Retrieval info: CONSTANT: INCLK0_INPUT_FREQUENCY NUMERIC "3333"
+// Retrieval info: CONSTANT: INCLK0_INPUT_FREQUENCY NUMERIC "4000"
 // Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Cyclone IV GX"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "altpll"
 // Retrieval info: CONSTANT: OPERATION_MODE STRING "NORMAL"
@@ -221,13 +221,13 @@ endmodule
 // Retrieval info: CONNECT: c0 0 0 0 0 @clk 0 0 1 0
 // Retrieval info: CONNECT: c1 0 0 0 0 @clk 0 0 1 1
 // Retrieval info: CONNECT: locked 0 0 0 0 @locked 0 0 0 0
-// Retrieval info: GEN_FILE: TYPE_NORMAL pll1.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL pll1.ppf TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL pll1.inc TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL pll1.cmp TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL pll1.bsf TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL pll1_inst.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL pll1_bb.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL pll1_syn.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL PLL.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL PLL.ppf TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL PLL.inc TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL PLL.cmp TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL PLL.bsf TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL PLL_inst.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL PLL_bb.v TRUE
+// Retrieval info: GEN_FILE: TYPE_NORMAL PLL_syn.v TRUE
 // Retrieval info: LIB_FILE: altera_mf
 // Retrieval info: CBX_MODULE_PREFIX: ON

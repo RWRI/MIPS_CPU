@@ -13,7 +13,7 @@
 --refer to the applicable agreement for further details.
 
 
-FUNCTION pll1 
+FUNCTION PLL 
 (
 	areset,
 	inclk0

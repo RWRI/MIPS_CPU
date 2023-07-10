@@ -5,19 +5,19 @@
 	Ryan Wyllyan Ribeiro Inácio 	 - 2020001770
 			
 		a) Qual a latência do sistema?
-			5 pulsos de clock
+			R.: 5 pulsos de clock, haja vista que o pipeline 5 estágios o que configura esta latencia. 
 			
 		b) Qual o throughput do sistema?
-			O throughput é de 1 instrução por clock quando o pipeline estiver cheio.
+			R.: O throughput é de 1 instrução por clock quando o pipeline estiver cheio, ou seja, após preencher todos os estágios.
 			
 		c) Qual a máxima frequência operacional entregue pelo Time Quest Timing Analizer para o multiplicador e para o sistema? (Indique a FPGA utilizada)
-			FPGA => Cyclone IV GX: EP4CGX150DF31I7
-			Foi analisado o Timing Analyzer (Slow 1200mV 100C Model)
-			Para o Multiplicador foi de 302.57MHz
-			Para o Sistema foi 65.92MHz
+			R.: FPGA => Cyclone IV GX: EP4CGX150DF31I7AD
+	  			 Para realizar o Timing Analyzer  utilizou-se a configuração "Slow 1200mV 100C Model".
+	  			 Para o Multiplicador foi de MHz
+	  			 Para o Sistema foi 65.92MHz
 			
 		d) Qual a máxima frequência de operação do sistema? (Indique a FPGA utilizada)
-			FPGA => Cyclone IV GX: EP4CGX150DF31I7
+			FPGA => Cyclone IV GX: EP4CGX150DF31I7AD
 			Como a multiplicação leva 34 pulsos de clock para ser realizada, a frequência do sistema tem que ser 34 vezes menor 
 			do que a do multiplicador. Desse modo as frequências ficaram as seguintes:
 			Para o Multiplicador foi de 300MHz
@@ -45,12 +45,11 @@
 
 module cpu(
 	output CS, WR_RD,
+	output [31:0] ADDR, Data_BUS_WRITE,
 	input CLK, rst,
-	input [31:0] Data_BUS_READ,
-	output [31:0] ADDR, Data_BUS_WRITE
+	input [31:0] Data_BUS_READ
 );
 
-	
 	
 	(*keep=1*)wire [31:0] out_inst_mem;
 	(*keep=1*)wire [9:0] out_PC;
@@ -63,7 +62,13 @@ module cpu(
 	(*keep=1*) wire csM;
 	
 	
-	pll1 pll1(.areset(rst),.inclk0(CLK),.c0(CLK_MUL),.c1(CLK_SYS));
+	PLL pll(
+		.areset(rst),
+		.inclk0(CLK),
+		.c0(CLK_MUL),
+		.c1(CLK_SYS)
+	);
+
 	
 	assign ADDR = reg_d1_out;
 	assign WR_RD = ctrl2[1];
@@ -254,6 +259,7 @@ module cpu(
 		.d(ctrl2[22:0]),
 		.q(ctrl3[22:0])
 	);
+	
 
 // 5º estágio 
 	mux MUX4(

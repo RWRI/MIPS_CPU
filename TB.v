@@ -10,7 +10,15 @@ module TB();
 	reg CLK_SYS, CLK_MUL;
 	reg [31:0] writeBack;	
 	
-	cpu DUT (.CLK(CLKIN), .rst(rst), .Data_BUS_READ(Data_BUS_READ), .ADDR(ADDR), .Data_BUS_WRITE(Data_BUS_WRITE),.CS(CS), .WR_RD(WR_RD));
+	cpu DUT (
+		.CLK(CLKIN), 
+		.rst(rst), 
+		.Data_BUS_READ(Data_BUS_READ), 
+		.ADDR(ADDR), 
+		.Data_BUS_WRITE(Data_BUS_WRITE),
+		.CS(CS), 
+		.WR_RD(WR_RD)
+	);
 
 	initial begin
 		$init_signal_spy("DUT/CLK_SYS","CLK_SYS",1);
@@ -19,13 +27,13 @@ module TB();
 		
 		CLKIN = 0;
 		rst = 0;
-		Data_BUS_READ = 32'h32323232;
+		Data_BUS_READ = 32'hAAAAAAAA;
 		
 		#20 rst = 1;
-		#400 rst = 0;
+		#80 rst = 0;
 
-		#3693 $stop;
+		#3600 $stop;
 	end
 	
-	always #1.667 CLKIN = ~CLKIN;	
+	always #2 CLKIN = ~CLKIN;	
 endmodule 

@@ -85,13 +85,10 @@ or r29, r29, r29
 		memoria[20]=32'b000111_11101_11101_11101_01010_100101;//bolhaOr
 		memoria[21]=32'b001001_11111_00110_0001100011111111;//sw $r6, END(r31)
 		
-		//load e bolhas para visualizar ultima instrução gravou corretamente
-		memoria[22]=32'b001000_11111_00111_0001100011111111;   //lw $r7, END(r31)		
-		memoria[23]=32'b000111_11110_11110_11110_01010_100100;//bolhaAnd
-		memoria[24]=32'b000111_11110_11110_11110_01010_100100;//bolhaAnd
-		memoria[25]=32'b000111_11110_11110_11110_01010_100100;//bolhaAnd
+		//load para visualizar ultima instrução gravou corretamente
+		//memoria[22]=32'b001000_11111_00111_0001100011111111;//lw $r7, END(r31)
 	
-		for(i = 26; i < 1024;i = i+1) 
+		for(i = 22; i < 1024;i = i+1) 
 			memoria[i] = 32'b0;
 	end
 
