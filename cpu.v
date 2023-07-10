@@ -13,33 +13,37 @@
 		c) Qual a máxima frequência operacional entregue pelo Time Quest Timing Analizer para o multiplicador e para o sistema? (Indique a FPGA utilizada)
 			R.: FPGA => Cyclone IV GX: EP4CGX150DF31I7AD
 	  			 Para realizar o Timing Analyzer  utilizou-se a configuração "Slow 1200mV 100C Model".
-	  			 Para o Multiplicador foi de MHz
-	  			 Para o Sistema foi 65.92MHz
+	  			 Para o Multiplicador obteve-se fmax = 298.33 MHz.
+	  			 Para o Sistema obteve-se fmax = 97.98 MHz.
 			
 		d) Qual a máxima frequência de operação do sistema? (Indique a FPGA utilizada)
-			FPGA => Cyclone IV GX: EP4CGX150DF31I7AD
-			Como a multiplicação leva 34 pulsos de clock para ser realizada, a frequência do sistema tem que ser 34 vezes menor 
-			do que a do multiplicador. Desse modo as frequências ficaram as seguintes:
-			Para o Multiplicador foi de 300MHz
-			Para o Sistema foi 8.824MHz
+			R.: FPGA => Cyclone IV GX: EP4CGX150DF31I7AD
+				 O multiplicador leva 34 pulsos de clk para completar a operação, então, a frequência do sistema tem que ser 34 vezes menor que a dele.
+				 Desse modo, as frequências escolhidas foram:
+				 	Para o Multiplicador foi de 250 MHz. (Restriced Fmax pelo Quartus)
+				 	Para o Sistema foi  250/34 = 7.353 MHz
 			
 		e) Com a arquitetura implementada, a expressão (A*B) – (C+D) é executada corretamente (se executada em sequência ininterrupta)? Por quê? 
 			O que pode ser feito para que a expressão seja calculada corretamente?
-			Não, visto que acontece "pipeline hazard", onde o resultado de uma instrução ainda não está no registrador de destino 
-			e a instrução seguinte tenta acessá-la. Uma maneira de resolver esse problema é inserir 3 bolhas na pipeline depois das instruções de load.
+			R.: Não, haja vista que tem-se "pipeline hazard", no qual o resultado de uma instrução ainda não está no registrador de destino.
+				 Ou seja, tem-se uma dependecia de dados e não obtem-se o valor correto para a expressão.
+				 Portanto, uma maneira de resolver esse problema é inserir 3 bolhas no pipeline depois das operações anteriores.
 			
 		f) Analisando a sua implementação de dois domínios de clock diferentes, haverá problemas com metaestabilidade? Por que?
-			Não, visto que o clock do sistema é um multiplo inteiro do clock do multiplicador e a PLL mantém a fase sincronizada.
+			R.: Não, haja vista que o clock do sistema é um multiplo inteiro do clock do multiplicador. Desta forma a PLL mantém a fase sincronizada.
 		
 		g) A aplicação de um multiplicador do tipo utilizado, no sistema MIPS sugerido, é eficiente em termos de velocidade? Por que? 
-			Não, visto que essa implementação de multiplicador utilizada possui pipeline enrolada, 
-			desse modo não tendo paralelismo e demorando vários ciclos (34 neste caso) para realizar a sua execução.
+			R.: Não, já que essa implementação do multiplicador possui pipeline enrolada. Consequentemente, não há paralelismo  de operações.
+				 Por isso, demora vários ciclos de clock (34) para realizar a execução completa da multiplicação.
 		
 		h) Cite modificações cabíveis na arquitetura do sistema que tornaria o sistema mais rápido (frequência deoperação maior). 
 			Para cada modificação sugerida, qual a nova latência e throughput do sistema?
-			Substituir a implementação do multiplicador por um mais condizente com essa implementação do MIPS. por exemplo, 
-			o próprio multiplicador da FPGA. Desse modo, o sistema poderia operar em uma frequência maior, 
-			e precisaria de apenas um Clock para todo o sistema. A latência e o throughput seriam mantidos.
+			R.: Haja vista que o problema dessa arquitetura são devidos ao multiplicador podem ser aplicadas duas soluções sobre ele:
+					1 - Mudar o multiplicador para outro que se adeque melhor a estrutura, ou seja, possua menor latencia.
+						 Nesta solução manteria-se a latência e throughput atual.
+					2 - Manter o multiplicador atual, mas mudar o seu pipeline enrolado para um desenrolado com  34 estágios.
+					    Vale ressaltar que nessa solução também não seria necessário a PLL pois o sistema funcionaria com apenas um clock.
+						 Por fim, o throughput se manteria, mas a nova latencia seria de 38 pulsos de clock devido a nova estrutura de pipeline.
 
 	*/
 
