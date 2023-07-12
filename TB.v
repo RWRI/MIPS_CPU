@@ -32,7 +32,7 @@ module TB();
 		#20 rst = 1;
 		#80 rst = 0;
 
-		#3600 $stop;
+		#3700 $stop;
 	end
 	
 	always #2 CLKIN = ~CLKIN;	

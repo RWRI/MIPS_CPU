@@ -5,7 +5,7 @@
 	Ryan Wyllyan Ribeiro Inácio 	 - 2020001770
 			
 		a) Qual a latência do sistema?
-			R.: 5 pulsos de clock, haja vista que o pipeline 5 estágios o que configura esta latencia. 
+			R.: 5 pulsos de clock, haja vista o pipeline 5 estágios o que configura esta latencia. 
 			
 		b) Qual o throughput do sistema?
 			R.: O throughput é de 1 instrução por clock quando o pipeline estiver cheio, ou seja, após preencher todos os estágios.
@@ -38,7 +38,7 @@
 		
 		h) Cite modificações cabíveis na arquitetura do sistema que tornaria o sistema mais rápido (frequência deoperação maior). 
 			Para cada modificação sugerida, qual a nova latência e throughput do sistema?
-			R.: Haja vista que o problema dessa arquitetura são devidos ao multiplicador podem ser aplicadas duas soluções sobre ele:
+			R.: Haja vista que os problemas dessa arquitetura são devidos ao multiplicador podem ser aplicadas duas soluções sobre ele:
 					1 - Mudar o multiplicador para outro que se adeque melhor a estrutura, ou seja, possua menor latencia.
 						 Nesta solução manteria-se a latência e throughput atual.
 					2 - Manter o multiplicador atual, mas mudar o seu pipeline enrolado para um desenrolado com  34 estágios.

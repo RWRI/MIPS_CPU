@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/simulation/modelsim
 vcpu
-Z1 !s110 1688999000
+Z1 !s110 1689186039
 !i10b 1
-!s100 ]JVL>f]75f1_BB2e6@Pz01
-I12gF5jc:X^Ez^:;kBm;VP1
+!s100 aQej@_oR1MRS]MTXmaF>c2
+IF@nc?iUlz:I^:8i7[XVCi2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1688998918
+w1689186024
 8cpu_min_1200mv_-40c_fast.vo
 Fcpu_min_1200mv_-40c_fast.vo
 L0 31
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1688999000.000000
+Z4 !s108 1689186039.000000
 !s107 cpu_min_1200mv_-40c_fast.vo|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|cpu_min_1200mv_-40c_fast.vo|
 !i113 1
@@ -33,11 +33,11 @@ Z6 tCvgOpt 0
 vTB
 R1
 !i10b 1
-!s100 oXd60980Q]McdBJTA_[`n1
-Ih;a[`K12[j^h:i>Dzo7le2
+!s100 ]WhLGTgdcd2PkRAjG>mmG1
+I7@9oz_NE83gkOXHTfQ`zZ0
 R2
 R0
-w1688998817
+w1689185959
 8D:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/TB.v
 FD:/UNIFEI/7Periodo/ELTD05/Trabalho2/MIPS_CPU/TB.v
 L0 3
